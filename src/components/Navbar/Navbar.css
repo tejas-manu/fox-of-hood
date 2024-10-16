@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #111; /* Background color of the navbar */
+    height: 100px; /* Increased height for the navbar */
+    padding: 0 20px; /* Padding on the sides */
+    color: white; /* Text color */
+    font-size: 20px; /* Font size */
+  }
+  
+  /* Logo Styling */
+  .navbar .logo {
+    margin-right: auto; /* Push logo to the left */
+  }
+  
+  /* Status Section Styling */
+  .status {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin-left: 20px; /* Add spacing to the left */
+  }
+  
+  /* Individual Status Items */
+  .invested,
+  .current-standing {
+    margin: 5px 0; /* Space between the two items */
+  }
+  

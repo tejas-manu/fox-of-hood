@@ -1,0 +1,41 @@
+/* Menu Bar Container */
+.menu-bar {
+    display: flex;
+    justify-content: space-between; /* Space out left and right buttons */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Background color of the menu bar */
+    height: 60px; /* Set a standard height for the menu bar */
+    padding: 0 20px; /* Padding on the left and right */
+  }
+  
+  /* Left and Right Button Groups */
+  .left-buttons,
+  .right-buttons {
+    display: flex;
+    align-items: center; /* Center buttons vertically */
+  }
+  
+  /* Button Styling */
+  .menu-button {
+    background-color: #444; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer;
+    height: 100%; /* Make buttons fill the height of the menu bar */
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #666; /* Button hover effect */
+  }
+  
+  /* Ensure proper spacing for left and right buttons */
+  .left-buttons button {
+    margin-right: 10px; /* Space between left buttons */
+  }
+  
+  .right-buttons button {
+    margin-left: 10px; /* Space between right buttons */
+  }
+  

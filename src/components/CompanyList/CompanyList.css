@@ -1,0 +1,55 @@
+/* Company List Container */
+.company-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Set a standard sidebar width */
+    background-color: black; /* Sidebar background color */
+    padding: 10px; /* Optional padding */
+    height: calc(100vh - 80px); /* Adjust height to fit under the navbar */
+  }
+  
+  /* Search Bar Styling */
+  .search-bar {
+    padding: 10px;
+    margin-bottom: 20px; /* Spacing below the search bar */
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Dark gray background */
+    color: white; /* White text */
+    width: 89%; /* Full width of the container */
+  }
+  
+  .search-bar::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+  }
+  
+  /* Company List */
+  h3 {
+    color: white; /* Header color */
+    margin-bottom: 10px;
+  }
+  
+  .companies {
+    flex-grow: 1; /* Allow the company list to grow */
+    /* Removed overflow-y to prevent separate scrollbar */
+  }
+  
+  .company-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #444; /* Gray background for companies */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .company-item:hover {
+    background-color: #666; /* Lighter gray on hover */
+  }
+  
+  /* No Results Styling */
+  .no-results {
+    color: white; /* White text */
+    padding: 10px;
+    text-align: center;
+  }
+  

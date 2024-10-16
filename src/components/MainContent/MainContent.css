@@ -1,0 +1,26 @@
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(to right, #2b2b6f, #1e1e7f); /* Blue gradient background */
+  }
+  
+  /* Company Stats and User Holding */
+  .company-stats, .user-holding {
+    background-color: #444; /* Gray background for content boxes */
+    padding: 20px;
+    color: white; /* White text */
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .company-stats {
+    flex: 2; /* Adjust size as needed */
+  }
+  
+  .user-holding {
+    flex: 1; /* Adjust size as needed */
+  }
+  
