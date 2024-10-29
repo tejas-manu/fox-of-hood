@@ -1,26 +1,35 @@
-/* Main Content Area */
 .main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: linear-gradient(to right, #2b2b6f, #1e1e7f); /* Blue gradient background */
-  }
-  
-  /* Company Stats and User Holding */
-  .company-stats, .user-holding {
-    background-color: #444; /* Gray background for content boxes */
-    padding: 20px;
-    color: white; /* White text */
-    margin-bottom: 20px;
-    border-radius: 8px; /* Rounded corners */
-  }
-  
-  .company-stats {
-    flex: 2; /* Adjust size as needed */
-  }
-  
-  .user-holding {
-    flex: 1; /* Adjust size as needed */
-  }
-  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(to right, #1c1f26, #1a1d24);
+  color: #d3d7db;
+}
+
+.company-stats, .user-holding {
+  background-color: #1e2128;
+  padding: 20px;
+  color: #d3d7db;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #00d1b2;
+  box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2);
+}
+
+.company-stats h3, .user-holding h3 {
+  color: #ffdd57;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 15px;
+}
+
+.company-stats p, .user-holding p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d3d7db;
+}
+
+.company-stats:hover, .user-holding:hover {
+  background-color: #2a2e37;
+  border-color: #ffdd57;
+}

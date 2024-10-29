@@ -1,55 +1,58 @@
-/* Company List Container */
 .company-list-container {
-    display: flex;
-    flex-direction: column;
-    width: 200px; /* Set a standard sidebar width */
-    background-color: black; /* Sidebar background color */
-    padding: 10px; /* Optional padding */
-    height: calc(100vh - 80px); /* Adjust height to fit under the navbar */
-  }
-  
-  /* Search Bar Styling */
-  .search-bar {
-    padding: 10px;
-    margin-bottom: 20px; /* Spacing below the search bar */
-    border: none;
-    border-radius: 5px;
-    background-color: #333; /* Dark gray background */
-    color: white; /* White text */
-    width: 89%; /* Full width of the container */
-  }
-  
-  .search-bar::placeholder {
-    color: #aaa; /* Light gray placeholder text */
-  }
-  
-  /* Company List */
-  h3 {
-    color: white; /* Header color */
-    margin-bottom: 10px;
-  }
-  
-  .companies {
-    flex-grow: 1; /* Allow the company list to grow */
-    /* Removed overflow-y to prevent separate scrollbar */
-  }
-  
-  .company-item {
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #444; /* Gray background for companies */
-    color: white;
-    cursor: pointer;
-  }
-  
-  .company-item:hover {
-    background-color: #666; /* Lighter gray on hover */
-  }
-  
-  /* No Results Styling */
-  .no-results {
-    color: white; /* White text */
-    padding: 10px;
-    text-align: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 240px; 
+  background-color: #1c1f26; 
+  padding: 15px; 
+  height: calc(100vh - 80px); 
+  border: 1px solid #00d1b2; 
+  box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2); 
+}
+
+.search-bar {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #00d1b2; 
+  border-radius: 5px;
+  background-color: #2a2e37; 
+  color: #d3d7db; 
+  width: 100%; 
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+.search-bar::placeholder {
+  color: #a1a5ad; 
+}
+
+
+h3 {
+  color: #ffdd57; 
+  margin-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace; 
+  text-align: center;
+}
+
+
+.companies {
+  flex-grow: 1;
+  overflow-y: auto; 
+  max-height: calc(100vh - 150px); 
+}
+
+
+.company-item {
+  padding: 12px;
+  margin: 6px 0;
+  background-color: #2a2e37; 
+  color: #d3d7db; 
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace; 
+  border: 1px solid transparent; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+.company-item:hover {
+  background-color: #3b404a; 
+  border-color: #00d1b2; 
+}

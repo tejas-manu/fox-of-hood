@@ -14,7 +14,6 @@ function MainContent({ selectedCompany }) {
       </div>
       <div className="user-holding">
         <h3>User Holding</h3>
-        {/* Placeholder for user holdings */}
         {selectedCompany ? (
           <p>Your holding in {selectedCompany}</p>
         ) : (

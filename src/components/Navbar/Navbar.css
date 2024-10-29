@@ -1,28 +1,39 @@
 .navbar {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    background-color: #111; /* Background color of the navbar */
-    height: 100px; /* Increased height for the navbar */
-    padding: 0 20px; /* Padding on the sides */
-    color: white; /* Text color */
-    font-size: 20px; /* Font size */
-  }
-  
-  /* Logo Styling */
-  .navbar .logo {
-    margin-right: auto; /* Push logo to the left */
-  }
-  
-  /* Status Section Styling */
-  .status {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    margin-left: 20px; /* Add spacing to the left */
-  }
-  
-  /* Individual Status Items */
-  .invested,
-  .current-standing {
-    margin: 5px 0; /* Space between the two items */
-  }
-  
+  display: flex;
+  align-items: center;
+  background-color: #1c1f26;
+  height: 80px;
+  padding: 0 20px;
+  color: #d3d7db;
+  font-size: 20px;
+  border-bottom: 2px solid #00d1b2;
+  box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2);
+}
+
+.navbar .logo {
+  margin-right: auto;
+  color: #ffdd57;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.invested,
+.current-standing {
+  margin: 5px 0;
+  color: #d3d7db;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.invested {
+  color: #00d1b2;
+}
+
+.current-standing {
+  color: #ffdd57;
+}
