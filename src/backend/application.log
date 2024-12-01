@@ -1,0 +1,65 @@
+2024-12-01T21:33:59.128Z [INFO]: Winston logging initialized
+2024-12-01T21:33:59.130Z [INFO]: Server is running...
+2024-12-01T21:33:59.140Z [INFO]: Backend server is running on http://localhost:5000
+2024-12-01T21:35:59.489Z [INFO]: User login initiated.
+2024-12-01T21:35:59.722Z [INFO]: Login successful for user: admin@example.com
+2024-12-01T21:35:59.735Z [INFO]: Fetching finances for user ID: 1
+2024-12-01T21:35:59.738Z [INFO]: User finances fetched successfully.
+2024-12-01T21:35:59.765Z [INFO]: Fetching finances for user ID: 1
+2024-12-01T21:35:59.768Z [INFO]: User finances fetched successfully.
+2024-12-01T21:35:59.789Z [INFO]: Action: Navbar Render, Details: {"investedAmount":0,"currentStanding":1000000,"timestamp":"2024-12-01T21:35:59.761Z"}
+2024-12-01T21:35:59.795Z [INFO]: Action: Navbar Render, Details: {"investedAmount":0,"currentStanding":1000000,"timestamp":"2024-12-01T21:35:59.768Z"}
+2024-12-01T21:35:59.801Z [INFO]: Action: Navbar Render, Details: {"investedAmount":52127.15,"currentStanding":966442.3,"timestamp":"2024-12-01T21:35:59.778Z"}
+2024-12-01T21:35:59.804Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-01T21:35:59.807Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-01T21:35:59.811Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:35:59.831Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:35:59.835Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:35:59.839Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":5}
+2024-12-01T21:35:59.843Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"totalValues":36836.2}
+2024-12-01T21:35:59.849Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"profits":[-6.6000000000008185,-8.400000000000887,101.400000000001,-0.5000000000001137,116.39999999999986]}
+2024-12-01T21:35:59.856Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:35:59.866Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:35:59.878Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:35:59.884Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:35:59.890Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:36:00.020Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":5}
+2024-12-01T21:36:00.035Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":5}
+2024-12-01T21:36:00.040Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"totalValues":36836.2}
+2024-12-01T21:36:00.045Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"profits":[-6.6000000000008185,-8.400000000000887,101.400000000001,-0.5000000000001137,116.39999999999986]}
+2024-12-01T21:36:00.049Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":5}
+2024-12-01T21:36:02.194Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-01T21:36:02.198Z"}
+2024-12-01T21:36:02.199Z [INFO]: Fetching stocks for date: 2024-11-30
+2024-12-01T21:36:02.213Z [INFO]: Serving cached stock data.
+2024-12-01T21:36:02.220Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
+2024-12-01T21:36:03.633Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-01T21:36:03.637Z"}
+2024-12-01T21:36:03.648Z [INFO]: Admin verification initiated for ID: 1
+2024-12-01T21:36:03.651Z [INFO]: Admin verification successful for ID: 1
+2024-12-01T21:36:03.652Z [INFO]: Admin user fetching request received.
+2024-12-01T21:36:03.653Z [INFO]: Fetched 4 user(s) successfully.
+2024-12-01T21:36:03.655Z [INFO]: Admin verification initiated for ID: 1
+2024-12-01T21:36:03.657Z [INFO]: Admin verification successful for ID: 1
+2024-12-01T21:36:03.659Z [INFO]: Admin user fetching request received.
+2024-12-01T21:36:03.660Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":4}
+2024-12-01T21:36:03.663Z [INFO]: Fetched 4 user(s) successfully.
+2024-12-01T21:36:03.670Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":4}
+2024-12-01T21:36:04.520Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-01T21:36:04.525Z"}
+2024-12-01T21:36:04.525Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:36:04.527Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-01T21:36:04.529Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-01T21:36:04.538Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:36:04.541Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:36:04.544Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":5}
+2024-12-01T21:36:04.552Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:36:04.555Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:36:04.559Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":5}
+2024-12-01T21:36:04.564Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"totalValues":36836.2}
+2024-12-01T21:36:04.568Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"profits":[-6.6000000000008185,-8.400000000000887,101.400000000001,-0.5000000000001137,116.39999999999986]}
+2024-12-01T21:36:04.571Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:36:04.577Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-01T21:36:04.583Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-01T21:36:04.608Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":5}
+2024-12-01T21:36:04.617Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":5}
+2024-12-01T21:36:04.622Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"totalValues":36836.2}
+2024-12-01T21:36:04.626Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","GOOGL","TSLA","PG","NVDA"],"profits":[-6.6000000000008185,-8.400000000000887,101.400000000001,-0.5000000000001137,116.39999999999986]}
+2024-12-01T21:36:06.172Z [INFO]: Action: User Logout, Details: {"timestamp":"2024-12-01T21:36:06.172Z"}
