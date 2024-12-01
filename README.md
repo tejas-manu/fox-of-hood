@@ -8,7 +8,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 ## Features
 
 ### User Features
-- **Login/Registration with CAPTCHA**: Secured user authentication.
+- **Login/Registration**: Secured user authentication.
 - **Portfolio Overview**: View invested amount, current standings, and portfolio distribution.
 - **Buy/Sell Stocks**: Real-time stock transactions with updated prices.
 - **Profit/Loss Analysis**: Visualize portfolio performance using dynamic charts.
