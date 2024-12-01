@@ -1,0 +1,97 @@
+/* Admin Panel Container */
+.admin-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(to right, #1c1f26, #1a1d24);
+    color: #d3d7db;
+  }
+  
+  /* Heading Styling */
+  .admin-heading {
+    color: #ffdd57;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Add User Section */
+  .admin-add-user {
+    margin-bottom: 30px;
+  }
+  
+  .admin-add-user h3 {
+    color: #ffdd57;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+  }
+  
+  .admin-input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #00d1b2;
+    border-radius: 5px;
+    background-color: #2a2e37;
+    color: #d3d7db;
+    width: 100%;
+  }
+  
+  .admin-button {
+    background-color: #00d1b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .admin-button:hover {
+    background-color: #007a73;
+  }
+  
+  /* User List Section */
+  .admin-user-list h3 {
+    color: #ffdd57;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+  }
+  
+  .admin-users {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-user-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2e37;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #00d1b2;
+    color: #d3d7db;
+  }
+  
+  .admin-delete-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admin-delete-button:hover {
+    background-color: #a80000;
+  }
+  

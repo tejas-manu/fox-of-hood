@@ -24,7 +24,6 @@
   color: #a1a5ad; 
 }
 
-
 h3 {
   color: #ffdd57; 
   margin-bottom: 10px;
@@ -32,27 +31,75 @@ h3 {
   text-align: center;
 }
 
-
 .companies {
   flex-grow: 1;
-  overflow-y: auto; 
-  max-height: calc(100vh - 150px); 
+  overflow-y: auto; /* Vertical scrolling for long lists */
+  overflow-x: hidden; /* No horizontal scrolling */
+  max-height: calc(100vh - 200px); /* Proper height calculation */
+  padding: 5px; /* Padding inside the container */
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 10px; /* Add consistent spacing between company items */
 }
 
-
+/* Ensure each item respects its container's width */
 .company-item {
   padding: 12px;
-  margin: 6px 0;
+  margin: 0; /* Remove margin to avoid extra spacing outside the container */
   background-color: #2a2e37; 
   color: #d3d7db; 
-  cursor: pointer;
   font-family: 'Courier New', Courier, monospace; 
   border: 1px solid transparent; 
   border-radius: 5px; 
-  transition: background-color 0.3s ease, border-color 0.3s ease; 
+  box-sizing: border-box; /* Include padding and border in width/height */
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
 
+/* Add hover styles for better interaction */
 .company-item:hover {
   background-color: #3b404a; 
   border-color: #00d1b2; 
+  cursor: pointer;
+}
+
+/* Buttons positioned below the stock details */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  margin-top: 10px; /* Add spacing above buttons */
+}
+
+/* Buy button styles */
+.buy-button {
+  background-color: #4caf50; /* Green for buy */
+  color: white; 
+  border: none;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 14px; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.buy-button:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+}
+
+/* Sell button styles */
+.sell-button {
+  background-color: #f44336; /* Red for sell */
+  color: white; 
+  border: none;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 14px; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.sell-button:hover {
+  background-color: #d32f2f; 
+  transform: scale(1.05); 
 }

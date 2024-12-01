@@ -1,21 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 import MenuBar from './components/Menubar/MenuBar';
 import CompanyList from './components/CompanyList/CompanyList';
 import MainContent from './components/MainContent/MainContent';
+import AdminPanel from './components/AdminPanel/AdminPanel';
 import Login from './components/Login/Login';
 import './App.css';
 
-function AppLayout({ selectedCompany, handleCompanyClick, view, setView, handleLogout }) {
+function AppLayout({ selectedCompany, handleCompanyClick, view, setView, handleLogout, isAdmin, finances, fetchUserFinances, refreshTrigger }) {
   return (
     <>
-      <Navbar />
-      <MenuBar setView={setView} handleLogout={handleLogout} />  {/* Pass handleLogout */}
+      <Navbar finances={finances} />
+      <MenuBar setView={setView} handleLogout={handleLogout} isAdmin={isAdmin} />
       <div className="content-layout">
-        <CompanyList view={view} onCompanyClick={handleCompanyClick} />
-        <MainContent selectedCompany={selectedCompany} />
+        {view === 'admin-panel' ? (
+          <AdminPanel />
+        ) : (
+          <>
+            <CompanyList
+              view={view}
+              onCompanyClick={handleCompanyClick}
+              onTransactionComplete={fetchUserFinances} // Use fetchUserFinances to update data
+            />
+            <MainContent
+              selectedCompany={selectedCompany}
+              refreshTrigger={refreshTrigger}
+            />
+          </>
+        )}
       </div>
     </>
   );
@@ -24,44 +38,134 @@ function AppLayout({ selectedCompany, handleCompanyClick, view, setView, handleL
 function App() {
   const [selectedCompany, setSelectedCompany] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [view, setView] = useState('portfolio');
+  const [clearFields, setClearFields] = useState(false);
+  const [finances, setFinances] = useState({ investedAmount: 0, currentStanding: 1000000 });
+
+  // Refresh trigger to notify components when a transaction happens
+  const [refreshTrigger, setRefreshTrigger] = useState(false);
 
   const handleCompanyClick = (companyName) => {
     setSelectedCompany(companyName);
+    setRefreshTrigger((prev) => !prev); // Trigger refresh on company selection
   };
 
-  const handleLogin = (credentials) => {
-    if (credentials.email === 'user@example.com' && credentials.password === 'password') {
-      setIsAuthenticated(true);
-    } else {
-      alert('Invalid email or password');
+  const handleLogin = async (credentials) => {
+    try {
+      const response = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: credentials.email,
+          password: credentials.password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.message === 'Login successful') {
+        setIsAuthenticated(true);
+        setIsAdmin(data.user.is_admin);
+        localStorage.setItem('adminId', data.user.id);
+        localStorage.setItem('userId', data.user.id);
+        fetchUserFinances(); // Fetch finances upon login
+      } else {
+        alert(data.message || 'Invalid email or password');
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+      alert('Error during login, please try again.');
+    }
+  };
+
+  const handleRegister = async (credentials) => {
+    try {
+      const response = await fetch('http://localhost:5000/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: credentials.email,
+          password: credentials.password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(data.message || 'Registration successful');
+        setClearFields(true);
+      } else {
+        alert(data.message || 'Registration failed');
+      }
+    } catch (error) {
+      console.error('Error during registration:', error);
+      alert('Error during registration, please try again.');
     }
   };
 
   const handleLogout = () => {
     setIsAuthenticated(false);
+    setIsAdmin(false);
     setView('portfolio');
+    setClearFields(true);
   };
+
+  const fetchUserFinances = async () => {
+    const userId = localStorage.getItem('userId');
+    if (!userId) return;
+
+    try {
+      const response = await fetch(`http://localhost:5000/user-finances/${userId}`);
+      const data = await response.json();
+
+      setFinances({
+        investedAmount: data.invested_amount,
+        currentStanding: data.current_balance,
+      });
+      setRefreshTrigger((prev) => !prev); // Trigger refresh for graphs
+    } catch (error) {
+      console.error('Error fetching user finances:', error);
+    }
+  };
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchUserFinances();
+    }
+  }, [isAuthenticated]);
 
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: isAuthenticated ? <Navigate to="/dashboard" /> : <Login handleLogin={handleLogin} />
+      path: '/',
+      element: isAuthenticated ? (
+        <Navigate to="/dashboard" />
+      ) : (
+        <Login handleLogin={handleLogin} handleRegister={handleRegister} clearFields={clearFields} />
+      ),
     },
     {
-      path: "/dashboard",
+      path: '/dashboard',
       element: isAuthenticated ? (
-        <AppLayout 
-          selectedCompany={selectedCompany} 
-          handleCompanyClick={handleCompanyClick} 
-          view={view} 
+        <AppLayout
+          selectedCompany={selectedCompany}
+          handleCompanyClick={handleCompanyClick}
+          view={view}
           setView={setView}
-          handleLogout={handleLogout} // Pass handleLogout to AppLayout
+          handleLogout={handleLogout}
+          isAdmin={isAdmin}
+          finances={finances} // Pass finances to AppLayout
+          fetchUserFinances={fetchUserFinances} // Pass fetchUserFinances to AppLayout
+          refreshTrigger={refreshTrigger} // Pass refresh trigger to AppLayout
         />
       ) : (
         <Navigate to="/" />
-      )
-    }
+      ),
+    },
   ]);
 
   return <RouterProvider router={router} />;

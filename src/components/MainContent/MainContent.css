@@ -1,35 +1,78 @@
 .main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background: linear-gradient(to right, #1c1f26, #1a1d24);
-  color: #d3d7db;
-}
-
-.company-stats, .user-holding {
-  background-color: #1e2128;
-  padding: 20px;
-  color: #d3d7db;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: 1px solid #00d1b2;
-  box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2);
-}
-
-.company-stats h3, .user-holding h3 {
-  color: #ffdd57;
-  font-family: 'Courier New', Courier, monospace;
-  margin-bottom: 15px;
-}
-
-.company-stats p, .user-holding p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #d3d7db;
-}
-
-.company-stats:hover, .user-holding:hover {
-  background-color: #2a2e37;
-  border-color: #ffdd57;
-}
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(to right, #1c1f26, #1a1d24);
+    color: #d3d7db;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .company-stats, .user-holding {
+    background-color: #1e2128;
+    padding: 20px;
+    color: #d3d7db;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #00d1b2;
+    box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2);
+  }
+  
+  .company-stats h3, .user-holding h3 {
+    color: #ffdd57;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+  }
+  
+  .charts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .chart-container {
+    width: 45%; /* Adjust width to fit the layout */
+    min-height: 350px; /* Increase the minimum height to fit the chart */
+    max-height: 700px; /* Optional, to prevent it from growing too large */
+    background-color: #2a2e37;
+    padding: 20px; /* Adjust padding to allow for space */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2);
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevent any overflow issues */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the chart and label */
+    justify-content: center; /* Ensure the chart is vertically centered */
+  }
+  
+  .chart-container h4 {
+    text-align: center;
+    color: #ffdd57;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px; /* Add spacing below the title */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      width: 100%; /* Stack charts on smaller screens */
+    }
+  }
+  
+  .refresh-button {
+    background-color: #00d1b2; /* Teal button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add space above the button */
+  }
+  
+  .refresh-button:hover {
+    background-color: #00b89a; /* Darker teal on hover */
+  }
+  

@@ -2,95 +2,214 @@ import React, { useState, useEffect } from 'react';
 import './CompanyList.css';
 import axios from 'axios';
 
-function CompanyList({ view, onCompanyClick }) {
-  const [stockPrices, setStockPrices] = useState({});
+function CompanyList({ view, onCompanyClick, onTransactionComplete }) {
+  const [portfolio, setPortfolio] = useState([]);
+  const [stockPrices, setStockPrices] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const userId = localStorage.getItem('userId'); // Retrieve user ID from local storage
 
-  // Alpha Vantage API Key
-  const API_KEY = 'YOUR_ALPHA_VANTAGE_API_KEY';
+  const logAction = async (action, details) => {
+    try {
+      await axios.post('http://localhost:5000/log', { action, details });
+      console.log(`Action logged: ${action}`, details);
+    } catch (logError) {
+      console.error('Error logging action:', logError);
+    }
+  };
 
-  // Top 30 companies
-  const symbols = [
-    'AAPL', 'MSFT', 'AMZN', 'GOOGL', 'TSLA', 'FB', 'NVDA', 'JPM', 'JNJ', 'V',
-    'PG', 'UNH', 'DIS', 'HD', 'MA', 'PYPL', 'VZ', 'NFLX', 'INTC', 'ADBE',
-    'PFE', 'KO', 'PEP', 'CSCO', 'ORCL', 'MRK', 'XOM', 'BA', 'COST', 'WMT'
-  ];
-
-  // Fetch stock prices when switching to Buy/Sell view
   useEffect(() => {
-    if (view === 'buy-sell') {
+    console.log('User ID from localStorage:', userId);
+
+    if (!userId) {
+      setError('User not logged in. Please log in.');
+      logAction('Error', { message: 'User ID is missing from localStorage.' });
+      return;
+    }
+
+    if (view === 'portfolio') {
+      fetchPortfolio();
+    } else if (view === 'buy-sell') {
       fetchStockPrices();
     }
-  }, [view]);
+  }, [view, userId]);
 
-  // Function to fetch stock prices using Alpha Vantage API
-  const fetchStockPrices = async () => {
+  const fetchPortfolio = async () => {
     setLoading(true);
     setError(null);
 
     try {
-      const stockData = {};
+      const response = await axios.get('http://localhost:5000/portfolio', {
+        headers: { userid: userId },
+      });
 
-      // Fetch stock data for each company
-      for (const company of symbols) {
-        const response = await axios.get(
-          `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${company}&interval=5min&apikey=${API_KEY}`
-        );
-
-        const timeSeries = response.data['Time Series (5min)'];
-        if (timeSeries) {
-          const timeStamps = Object.keys(timeSeries); 
-          const latestTime = timeStamps[0]; 
-          const previousTime = timeStamps[1]; 
-
-          const latestPrice = parseFloat(timeSeries[latestTime]['1. open']); 
-          const previousPrice = parseFloat(timeSeries[previousTime]['1. open']);
-
-          
-          const priceChange = latestPrice > previousPrice ? 'increase' : latestPrice < previousPrice ? 'decrease' : 'neutral';
-
-          
-          stockData[company] = {
-            price: latestPrice.toFixed(2), 
-            change: priceChange 
-          };
-        } else {
-          stockData[company] = {
-            price: 'N/A',
-            change: 'neutral'
-          };
-        }
+      if (response.data.message === 'No stocks purchased') {
+        setPortfolio([]);
+      } else {
+        setPortfolio(response.data);
       }
-
-      setStockPrices(stockData); 
+      logAction('Fetch Portfolio', { success: true, dataLength: response.data.length });
     } catch (error) {
-      setError('Failed to fetch stock prices. Please try again later.');
-      console.error('Error fetching stock prices:', error);
+      console.error('Error fetching portfolio:', error);
+      logAction('Fetch Portfolio Error', { success: false, error: error.message });
+      setError('Failed to fetch portfolio. Please try again later.');
     }
 
     setLoading(false);
   };
 
-  const renderBuySellView = () => {
-    return symbols.map((symbol, index) => {
-      const stock = stockPrices[symbol] || {};
-      const price = stock.price || 'N/A';
-      const change = stock.change || 'neutral';
+  const fetchStockPrices = async () => {
+    setLoading(true);
+    setError(null);
 
-      // Set color based on price change
-      const priceColor = change === 'increase' ? 'green' : change === 'decrease' ? 'red' : 'white';
+    try {
+      const response = await axios.get('http://localhost:5000/stocks');
+      setStockPrices(response.data);
+      logAction('Fetch Stock Prices', { success: true, dataLength: response.data.length });
+    } catch (error) {
+      console.error('Error fetching stock prices:', error);
+      logAction('Fetch Stock Prices Error', { success: false, error: error.message });
+      setError('Failed to fetch stock prices. Please try again later.');
+    }
 
-      return (
-        <div
-          key={index}
-          className="company-item"
-          onClick={() => onCompanyClick(symbol)}
-        >
-          {symbol} - <span style={{ color: priceColor }}>${price}</span>
+    setLoading(false);
+  };
+
+  const handleBuy = async (symbol, price) => {
+    const quantity = prompt(`Enter quantity to buy for ${symbol}:`);
+    if (!quantity || isNaN(quantity)) {
+      logAction('Buy Stock Error', { success: false, reason: 'Invalid quantity' });
+      return;
+    }
+
+    try {
+      await axios.post('http://localhost:5000/buy-stock', {
+        userId,
+        symbol,
+        quantity: parseInt(quantity),
+        price,
+      });
+      alert('Stock purchased successfully');
+      logAction('Buy Stock', { success: true, symbol, quantity });
+      fetchPortfolio();
+      onTransactionComplete(); // Trigger parent refresh
+    } catch (error) {
+      console.error('Error buying stock:', error);
+      logAction('Buy Stock Error', { success: false, symbol, error: error.message });
+      alert('Error buying stock.');
+    }
+  };
+
+  const handleSell = async (symbol, price) => {
+    const quantity = prompt(`Enter quantity to sell for ${symbol}:`);
+    if (!quantity || isNaN(quantity)) {
+      logAction('Sell Stock Error', { success: false, reason: 'Invalid quantity' });
+      return;
+    }
+
+    try {
+      await axios.post('http://localhost:5000/sell-stock', {
+        userId,
+        symbol,
+        quantity: parseInt(quantity),
+        price,
+      });
+      alert('Stock sold successfully');
+      logAction('Sell Stock', { success: true, symbol, quantity });
+      fetchPortfolio();
+      onTransactionComplete(); // Trigger parent refresh
+    } catch (error) {
+      console.error('Error selling stock:', error);
+      logAction('Sell Stock Error', { success: false, symbol, error: error.message });
+      alert('Error selling stock.');
+    }
+  };
+
+  const handleCompanySelection = (symbol) => {
+    onCompanyClick(symbol); // Notify parent about selected company
+    logAction('Select Company', { success: true, symbol });
+  };
+
+  const renderPortfolioView = () => {
+    if (portfolio.length === 0) {
+      return <div className="no-results">No stocks purchased</div>;
+    }
+
+    return portfolio.map((stock, index) => (
+      <div
+        key={index}
+        className="company-item"
+        onClick={() => handleCompanySelection(stock.symbol)}
+        style={{ cursor: 'pointer' }} // Visual indication that the item is clickable
+      >
+        <div>
+          <strong>{stock.symbol}</strong>
         </div>
-      );
-    });
+        <div>Quantity: {stock.quantity}</div>
+        <div>Purchase Price: ${stock.purchase_price}</div>
+        <div>Current Price: ${stock.current_price}</div>
+        <div className="button-group">
+          <button
+            className="buy-button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleBuy(stock.symbol, stock.current_price);
+            }}
+          >
+            Buy
+          </button>
+          <button
+            className="sell-button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleSell(stock.symbol, stock.current_price);
+            }}
+          >
+            Sell
+          </button>
+        </div>
+      </div>
+    ));
+  };
+
+  const renderBuySellView = () => {
+    if (stockPrices.length === 0) {
+      return <div className="no-results">No stock data available</div>;
+    }
+
+    return stockPrices.map((stock, index) => (
+      <div
+        key={index}
+        className="company-item"
+        onClick={() => handleCompanySelection(stock.symbol)}
+        style={{ cursor: 'pointer' }} // Visual indication that the item is clickable
+      >
+        <div>
+          <strong>{stock.symbol}</strong>
+        </div>
+        <div>Current Price: ${stock.price}</div>
+        <div className="button-group">
+          <button
+            className="buy-button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleBuy(stock.symbol, stock.price);
+            }}
+          >
+            Buy
+          </button>
+          <button
+            className="sell-button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleSell(stock.symbol, stock.price);
+            }}
+          >
+            Sell
+          </button>
+        </div>
+      </div>
+    ));
   };
 
   return (
@@ -99,12 +218,14 @@ function CompanyList({ view, onCompanyClick }) {
 
       <div className="companies">
         {loading ? (
-          <div className="loading">Loading stock prices...</div>
+          <div className="loading">Loading...</div>
         ) : error ? (
           <div className="error">{error}</div>
-        ) : (
+        ) : view === 'portfolio' ? (
+          renderPortfolioView()
+        ) : view === 'buy-sell' ? (
           renderBuySellView()
-        )}
+        ) : null}
       </div>
     </div>
   );
