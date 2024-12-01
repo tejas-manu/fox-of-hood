@@ -8,7 +8,8 @@ A full-stack web application for managing personal investment portfolios. Users 
 ## Features
 
 ### User Features
-- **Login/Registration with CAPTCHA**: Secured user authentication.
+
+- **Login/Registration**: Secured user authentication.
 - **Portfolio Overview**: View invested amount, current standings, and portfolio distribution.
 - **Buy/Sell Stocks**: Real-time stock transactions with updated prices.
 - **Profit/Loss Analysis**: Visualize portfolio performance using dynamic charts.
@@ -83,7 +84,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory:
+1. Open a new terminal and navigate to the root directory if not already on it:
    ```bash
    cd fox-of-hood
    ```
@@ -167,7 +168,6 @@ fox-of-hood/
 ## Known Issues and Debugging Tips
 
 ### Common Issues
-- **Invalid CAPTCHA**: Ensure the CAPTCHA keys are correct and reCAPTCHA is integrated properly.
 - **Database Connection Error**: Verify PostgreSQL is running and credentials are correct.
 - **Chart Not Displaying**: Ensure valid data is returned from the `/portfolio` endpoint.
 
