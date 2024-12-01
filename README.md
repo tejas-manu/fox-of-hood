@@ -83,7 +83,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 
 ### Frontend Setup
 
-1. Navigate to the frontend directory:
+1. Open a new terminal and navigate to the root directory if not already on it:
    ```bash
    cd fox-of-hood
    ```
@@ -167,7 +167,6 @@ fox-of-hood/
 ## Known Issues and Debugging Tips
 
 ### Common Issues
-- **Invalid CAPTCHA**: Ensure the CAPTCHA keys are correct and reCAPTCHA is integrated properly.
 - **Database Connection Error**: Verify PostgreSQL is running and credentials are correct.
 - **Chart Not Displaying**: Ensure valid data is returned from the `/portfolio` endpoint.
 
