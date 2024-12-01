@@ -8,7 +8,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 ## Features
 
 ### User Features
-- **Login/Registration with CAPTCHA**: Secured user authentication with Google reCAPTCHA.
+- **Login/Registration with CAPTCHA**: Secured user authentication.
 - **Portfolio Overview**: View invested amount, current standings, and portfolio distribution.
 - **Buy/Sell Stocks**: Real-time stock transactions with updated prices.
 - **Profit/Loss Analysis**: Visualize portfolio performance using dynamic charts.
@@ -52,7 +52,6 @@ A full-stack web application for managing personal investment portfolios. Users 
 1. Clone the repository:
    ```bash
    git clone https://github.com/{your-username}/fox-of-hood.git
-   cd portfolio-management/backend
    ```
 
 2. Install dependencies:
@@ -76,6 +75,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 
 4. Start the backend server:
    ```bash
+   cd fox-of-hood\src\backend
    node server.js
    ```
 
@@ -85,7 +85,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 
 1. Navigate to the frontend directory:
    ```bash
-   cd portfolio-management/frontend
+   cd fox-of-hood
    ```
 
 2. Install dependencies:
