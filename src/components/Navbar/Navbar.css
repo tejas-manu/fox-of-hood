@@ -37,3 +37,25 @@
 .current-standing {
   color: #ffdd57;
 }
+
+/* Styling for Net Profit/Loss */
+.net-profit-loss {
+  margin: 5px 0; /* Matches spacing of other status items */
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffdd57
+  /* font-size: 18px; */
+   /* Matches the font size of wallet balance */
+  /* font-weight: bold; */
+}
+
+.net-profit-loss .profit {
+  color: #00ff7f; /* Vibrant green for positive profit */
+}
+
+.net-profit-loss .loss {
+  color: #ff4500; /* Bright red for loss */
+}
+
+.net-profit-loss .neutral {
+  color: #d3d7db; /* Neutral gray for no profit/loss */
+}

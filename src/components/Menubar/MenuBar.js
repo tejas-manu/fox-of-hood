@@ -45,6 +45,12 @@ function MenuBar({ setView, isAdmin, handleLogout }) {
         >
           Buy/Sell
         </button>
+        <button
+          className="menu-button"
+          onClick={() => handleViewChange('transaction-history')}
+        >
+          Transaction History
+        </button>
         {isAdmin && (
           <button
             className="menu-button"
@@ -55,6 +61,7 @@ function MenuBar({ setView, isAdmin, handleLogout }) {
         )}
       </div>
       <div className="right-buttons">
+        <button className="menu-button" onClick={() => setView('profile')}>Profile</button>
         <button className="menu-button" onClick={handleLogoutClick}>
           Logout
         </button>

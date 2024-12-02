@@ -6,10 +6,22 @@ import MenuBar from './components/Menubar/MenuBar';
 import CompanyList from './components/CompanyList/CompanyList';
 import MainContent from './components/MainContent/MainContent';
 import AdminPanel from './components/AdminPanel/AdminPanel';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import UserProfile from './components/Profile/Profile'; // Import UserProfile
 import Login from './components/Login/Login';
 import './App.css';
 
-function AppLayout({ selectedCompany, handleCompanyClick, view, setView, handleLogout, isAdmin, finances, fetchUserFinances, refreshTrigger }) {
+function AppLayout({
+  selectedCompany,
+  handleCompanyClick,
+  view,
+  setView,
+  handleLogout,
+  isAdmin,
+  finances,
+  fetchUserFinances,
+  refreshTrigger,
+}) {
   return (
     <>
       <Navbar finances={finances} />
@@ -17,6 +29,10 @@ function AppLayout({ selectedCompany, handleCompanyClick, view, setView, handleL
       <div className="content-layout">
         {view === 'admin-panel' ? (
           <AdminPanel />
+        ) : view === 'transaction-history' ? (
+          <TransactionHistory />
+        ) : view === 'profile' ? (
+          <UserProfile refreshTrigger={refreshTrigger} fetchUserFinances={fetchUserFinances} />
         ) : (
           <>
             <CompanyList
@@ -43,8 +59,7 @@ function App() {
   const [clearFields, setClearFields] = useState(false);
   const [finances, setFinances] = useState({ investedAmount: 0, currentStanding: 1000000 });
 
-  // Refresh trigger to notify components when a transaction happens
-  const [refreshTrigger, setRefreshTrigger] = useState(false);
+  const [refreshTrigger, setRefreshTrigger] = useState(false); // Refresh trigger
 
   const handleCompanyClick = (companyName) => {
     setSelectedCompany(companyName);
@@ -55,13 +70,8 @@ function App() {
     try {
       const response = await fetch('http://localhost:5000/login', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: credentials.email,
-          password: credentials.password,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: credentials.email, password: credentials.password }),
       });
 
       const data = await response.json();
@@ -85,13 +95,8 @@ function App() {
     try {
       const response = await fetch('http://localhost:5000/register', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          username: credentials.email,
-          password: credentials.password,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: credentials.email, password: credentials.password }),
       });
 
       const data = await response.json();
@@ -158,9 +163,9 @@ function App() {
           setView={setView}
           handleLogout={handleLogout}
           isAdmin={isAdmin}
-          finances={finances} // Pass finances to AppLayout
-          fetchUserFinances={fetchUserFinances} // Pass fetchUserFinances to AppLayout
-          refreshTrigger={refreshTrigger} // Pass refresh trigger to AppLayout
+          finances={finances}
+          fetchUserFinances={fetchUserFinances}
+          refreshTrigger={refreshTrigger}
         />
       ) : (
         <Navigate to="/" />

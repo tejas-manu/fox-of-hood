@@ -1,0 +1,79 @@
+/* Transaction History Container */
+.transaction-history {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(to right, #1c1f26, #1a1d24); /* Matches Admin Panel background */
+    color: #d3d7db;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 209, 178, 0.2); /* Subtle shadow for depth */
+  }
+  
+  /* Heading Styling */
+  .transaction-history h3 {
+    color: #ffdd57; /* Matches Admin Panel headings */
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Error Message Styling */
+  .transaction-history .error {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Table Styling */
+  .transaction-history table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #282c34; /* Subtle contrast with the container */
+    border: 2px solid #00d1b2; /* Matches the theme */
+    border-radius: 10px;
+    overflow: hidden; /* Rounded corners for the table */
+  }
+  
+  .transaction-history th,
+  .transaction-history td {
+    padding: 10px 15px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .transaction-history th {
+    background-color: #333842; /* Darker header for contrast */
+    color: #00d1b2; /* Matches Admin Panel primary color */
+    text-transform: uppercase;
+  }
+  
+  .transaction-history tr:nth-child(even) {
+    background-color: #2e323a; /* Alternate row color for better readability */
+  }
+  
+  .transaction-history tr:hover {
+    background-color: #3b404a; /* Highlight row on hover */
+  }
+  
+  .transaction-history td {
+    color: #d3d7db; /* Text color consistent with Admin Panel */
+  }
+  
+  .transaction-history th {
+    border-bottom: 2px solid #00d1b2; /* Highlight table header separation */
+  }
+  
+  /* No Transactions Message Styling */
+  .transaction-history p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #d3d7db;
+    text-align: center;
+  }
+  
+  /* Add Padding Around the Table */
+  .transaction-history .table-container {
+    margin-top: 20px;
+  }
+  

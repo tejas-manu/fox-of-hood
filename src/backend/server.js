@@ -131,7 +131,7 @@ const fetchStockDataFromAPI = async (symbol) => {
 // Update the cache in the database
 const updateCache = async () => {
   const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
+  yesterday.setDate(yesterday.getDate() - 2);
   const today = yesterday.toISOString().split('T')[0];
 
   logger.info('Updating stock cache...');
@@ -160,7 +160,7 @@ const updateCache = async () => {
 // Fetch cached or updated stock prices
 app.get('/stocks', async (req, res) => {
   const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
+  yesterday.setDate(yesterday.getDate() - 2);
   const previousDay = yesterday.toISOString().split('T')[0];
 
   logger.info(`Fetching stocks for date: ${previousDay}`);
@@ -357,6 +357,14 @@ app.post('/buy-stock', async (req, res) => {
         [totalCost, userId]
       );
       logger.info(`User finances updated for ${userId}. Total cost: ${totalCost}`);
+
+      await pool.query(`
+        INSERT INTO transactions (user_id, symbol, transaction_type, quantity, price)
+        VALUES ($1, $2, 'BUY', $3, $4)
+    `, [userId, symbol, quantity, price]);
+
+      logger.info(`User transaction updated for ${userId}.`);
+    
   
       await pool.query('COMMIT');
       res.json({ message: 'Stock purchased successfully' });
@@ -426,6 +434,14 @@ app.post('/buy-stock', async (req, res) => {
         [totalSale, quantity * (price / 2), userId]
       );
       logger.info(`User finances updated for ${userId}. Total sale: ${totalSale}`);
+
+      await pool.query(`
+        INSERT INTO transactions (user_id, symbol, transaction_type, quantity, price)
+        VALUES ($1, $2, 'SELL', $3, $4)
+    `, [userId, symbol, quantity, price]);
+
+      logger.info(`User transaction updated for ${userId}.`);
+    
   
       await pool.query('COMMIT');
       res.json({ message: 'Stock sold successfully' });
@@ -519,6 +535,115 @@ app.post('/admin/add-user', verifyAdmin, async (req, res) => {
     logger.info(`Action: ${action}, Details: ${JSON.stringify(details)}`);
     res.status(200).send({ message: 'Log received' });
   });
+
+// Fetch a user's transaction history
+app.get('/transactions', async (req, res) => {
+  const userId = req.headers.userid;
+
+  if (!userId || isNaN(userId)) {
+    return res.status(400).json({ message: 'Invalid or missing User ID.' });
+  }
+
+  try {
+    const result = await pool.query(
+      'SELECT * FROM transactions WHERE user_id = $1 ORDER BY transaction_date DESC',
+      [userId]
+    );
+    res.status(200).json(result.rows);
+  } catch (error) {
+    console.error('Error fetching user transaction history:', error.message);
+    res.status(500).json({ message: 'Error fetching transaction history.' });
+  }
+});
+
+// Fetch all users' transaction history (Admin only)
+app.get('/admin/all-transactions', verifyAdmin, async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM transactions ORDER BY transaction_date DESC');
+    res.status(200).json(result.rows);
+  } catch (error) {
+    console.error('Error fetching all users transaction history:', error.message);
+    res.status(500).json({ message: 'Error fetching all transactions.' });
+  }
+});
+
+// Fetch user details
+app.get('/user/details', async (req, res) => {
+  const userId = req.headers.userid;
+  if (!userId) {
+    return res.status(400).json({ message: 'User ID is missing.' });
+  }
+
+  try {
+    const result = await pool.query(
+      'SELECT username, first_name, last_name, phone_number, email, city, state, current_balance FROM users WHERE id = $1',
+      [userId]
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'User not found.' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error('Error fetching user details:', error);
+    res.status(500).json({ message: 'Error fetching user details.' });
+  }
+});
+
+// Update user profile
+app.post('/user/update', async (req, res) => {
+  const { userId, firstName, lastName, phoneNumber, city, state } = req.body;
+  if (!userId) {
+    return res.status(400).json({ message: 'User ID is missing.' });
+  }
+
+  try {
+    await pool.query(
+      'UPDATE users SET first_name = $1, last_name = $2, phone_number = $3, city = $4, state = $5 WHERE id = $6',
+      [firstName, lastName, phoneNumber, city, state, userId]
+    );
+
+    res.json({ message: 'Profile updated successfully.' });
+  } catch (error) {
+    console.error('Error updating profile:', error);
+    res.status(500).json({ message: 'Error updating profile.' });
+  }
+});
+
+// Update user password
+app.post('/user/update-password', async (req, res) => {
+  const { userId, oldPassword, newPassword } = req.body;
+
+  if (!userId || !oldPassword || !newPassword) {
+    return res.status(400).json({ message: 'Required fields are missing.' });
+  }
+
+  try {
+    const userResult = await pool.query('SELECT password FROM users WHERE id = $1', [userId]);
+
+    if (userResult.rows.length === 0) {
+      return res.status(404).json({ message: 'User not found.' });
+    }
+
+    const isValid = await bcrypt.compare(oldPassword, userResult.rows[0].password);
+
+    if (!isValid) {
+      return res.status(401).json({ message: 'Old password is incorrect.' });
+    }
+
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    await pool.query('UPDATE users SET password = $1 WHERE id = $2', [hashedPassword, userId]);
+
+    res.json({ message: 'Password updated successfully.' });
+  } catch (error) {
+    console.error('Error updating password:', error);
+    res.status(500).json({ message: 'Error updating password.' });
+  }
+});
+
+
   
   
 // Start the server

@@ -27,3 +27,16 @@ CREATE TABLE stock_cache (
     last_updated DATE NOT NULL,
     previous_price NUMERIC
 );
+
+
+CREATE TABLE transactions (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    symbol VARCHAR(10) NOT NULL,
+    transaction_type VARCHAR(10) CHECK (transaction_type IN ('BUY', 'SELL')),
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    total_value DECIMAL(10, 2) AS (quantity * price) STORED,
+    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
