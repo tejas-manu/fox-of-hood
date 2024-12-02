@@ -28,7 +28,7 @@ CREATE TABLE stock_cache (
     previous_price NUMERIC
 );
 
-
+--Create 'Transaction History' table
 CREATE TABLE transactions (
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,

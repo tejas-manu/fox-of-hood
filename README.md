@@ -158,6 +158,8 @@ fox-of-hood/
 │   │   │   ├── MenuBar.js  # Navigation bar
 │   │   │   ├── MainContent.js # Portfolio visualization
 │   │   │   ├── Navbar.js   # Top navigation
+│   │   │   ├── Profile.js    # Profile
+│   │   │   ├── TransactionHistory.js    # Transaction History
 │   │   └── App.js          # Main React component
 │   └── package.json        # Frontend dependencies
 └── README.md               # Project documentation
