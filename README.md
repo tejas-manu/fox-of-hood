@@ -177,3 +177,11 @@ fox-of-hood/
 - Check logs in the backend (`backend/application.log`) for detailed errors.
 - Use browser developer tools to inspect API requests and responses.
 
+
+## License
+This project is licensed under the [GNU General Public License v3.0](LICENSE) and is distributed freely for educational use.
+
+## Educational Use
+This project is intended for educational use only and may be freely distributed and modified under the terms of the GNU GPLv3 license.
+![GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+
