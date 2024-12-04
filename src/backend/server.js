@@ -131,7 +131,7 @@ const fetchStockDataFromAPI = async (symbol) => {
 // Update the cache in the database
 const updateCache = async () => {
   const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 2);
+  yesterday.setDate(yesterday.getDate());
   const today = yesterday.toISOString().split('T')[0];
 
   logger.info('Updating stock cache...');
@@ -160,7 +160,7 @@ const updateCache = async () => {
 // Fetch cached or updated stock prices
 app.get('/stocks', async (req, res) => {
   const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 2);
+  yesterday.setDate(yesterday.getDate());
   const previousDay = yesterday.toISOString().split('T')[0];
 
   logger.info(`Fetching stocks for date: ${previousDay}`);

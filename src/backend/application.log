@@ -1787,3 +1787,874 @@
 2024-12-02T01:06:06.198Z [INFO]: Portfolio fetched successfully for user ID: 1
 2024-12-02T01:06:06.206Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
 2024-12-02T01:06:08.090Z [INFO]: Action: User Logout, Details: {"timestamp":"2024-12-02T01:06:08.089Z"}
+2024-12-02T15:43:36.342Z [INFO]: Winston logging initialized
+2024-12-02T15:43:36.346Z [INFO]: Server is running...
+2024-12-02T15:43:36.360Z [INFO]: Backend server is running on http://localhost:5000
+2024-12-02T15:46:53.007Z [INFO]: User login initiated.
+2024-12-02T15:46:53.459Z [WARN]: Invalid password for user: admin@example.com
+2024-12-02T15:47:12.979Z [INFO]: User login initiated.
+2024-12-02T15:47:13.208Z [INFO]: Login successful for user: admin@example.com
+2024-12-02T15:47:13.217Z [INFO]: Fetching finances for user ID: 1
+2024-12-02T15:47:13.220Z [INFO]: User finances fetched successfully.
+2024-12-02T15:47:13.243Z [INFO]: Fetching finances for user ID: 1
+2024-12-02T15:47:13.245Z [INFO]: User finances fetched successfully.
+2024-12-02T15:47:13.297Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-02T15:47:13.301Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-02T15:47:13.307Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:13.323Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:13.326Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:13.335Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:13.340Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:13.342Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-02T15:47:13.349Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:13.353Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:13.359Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:13.362Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:13.368Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-02T15:47:13.371Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-02T15:47:13.374Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-02T15:47:13.379Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:13.383Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:13.389Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:13.514Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-02T15:47:13.519Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-02T15:47:13.522Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-02T15:47:13.525Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-02T15:47:33.063Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-02T15:47:33.045Z"}
+2024-12-02T15:47:33.085Z [INFO]: Fetching stocks for date: 2024-11-30
+2024-12-02T15:47:33.211Z [INFO]: Serving cached stock data.
+2024-12-02T15:47:33.217Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":23}
+2024-12-02T15:47:36.560Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-02T15:47:36.558Z"}
+2024-12-02T15:47:36.567Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:47:36.578Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:47:36.583Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-02T15:50:34.564Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-02T15:50:34.545Z"}
+2024-12-02T15:50:34.582Z [INFO]: Fetching stocks for date: 2024-11-30
+2024-12-02T15:50:34.688Z [INFO]: Serving cached stock data.
+2024-12-02T15:50:34.695Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":23}
+2024-12-02T15:50:47.207Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-02T15:50:47.191Z"}
+2024-12-02T15:50:47.231Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-02T15:50:47.351Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-02T15:50:47.356Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-02T15:51:00.233Z [INFO]: Action: Buy Stock Error, Details: {"success":false,"reason":"Invalid quantity"}
+2024-12-02T15:51:05.201Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-02T15:51:05.195Z"}
+2024-12-02T15:51:05.220Z [INFO]: Fetching stocks for date: 2024-11-30
+2024-12-02T15:51:05.309Z [INFO]: Serving cached stock data.
+2024-12-02T15:51:05.316Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":23}
+2024-12-02T15:51:18.853Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-02T15:51:18.837Z"}
+2024-12-02T15:51:44.805Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-02T15:51:44.791Z"}
+2024-12-02T15:51:44.832Z [INFO]: Admin verification initiated for ID: 1
+2024-12-02T15:51:44.921Z [INFO]: Admin verification successful for ID: 1
+2024-12-02T15:51:44.922Z [INFO]: Admin user fetching request received.
+2024-12-02T15:51:44.926Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-02T15:51:44.929Z [INFO]: Admin verification initiated for ID: 1
+2024-12-02T15:51:44.930Z [INFO]: Admin verification successful for ID: 1
+2024-12-02T15:51:44.931Z [INFO]: Admin user fetching request received.
+2024-12-02T15:51:44.932Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-02T15:51:44.934Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-02T15:51:44.944Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-02T15:52:44.516Z [INFO]: Action: User Logout, Details: {"timestamp":"2024-12-02T15:52:44.510Z"}
+2024-12-03T05:21:10.703Z [INFO]: User login initiated.
+2024-12-03T05:21:10.965Z [INFO]: Login successful for user: admin@example.com
+2024-12-03T05:21:10.976Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T05:21:10.979Z [INFO]: User finances fetched successfully.
+2024-12-03T05:21:11.009Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T05:21:11.011Z [INFO]: User finances fetched successfully.
+2024-12-03T05:21:11.059Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:21:11.074Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:21:11.078Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:11.092Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:11.095Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:11.101Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:11.104Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:11.106Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:21:11.113Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:11.116Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:11.118Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:21:11.124Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:21:11.127Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:21:11.134Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:11.136Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:11.143Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:11.145Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:11.150Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:11.193Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:21:11.198Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:21:11.202Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:21:11.204Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:21:12.425Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:12.422Z"}
+2024-12-03T05:21:12.436Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:21:12.441Z [INFO]: Serving cached stock data.
+2024-12-03T05:21:12.447Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:21:13.496Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:13.493Z"}
+2024-12-03T05:21:13.721Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:13.717Z"}
+2024-12-03T05:21:13.967Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:13.961Z"}
+2024-12-03T05:21:14.654Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T05:21:14.647Z"}
+2024-12-03T05:21:14.667Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:14.679Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:14.714Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:21:15.226Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:15.223Z"}
+2024-12-03T05:21:15.230Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:21:15.231Z [INFO]: Serving cached stock data.
+2024-12-03T05:21:15.238Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:21:17.586Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:17.576Z"}
+2024-12-03T05:21:18.270Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:18.268Z"}
+2024-12-03T05:21:18.495Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:18.493Z"}
+2024-12-03T05:21:19.447Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T05:21:19.442Z"}
+2024-12-03T05:21:20.211Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:21:20.208Z"}
+2024-12-03T05:21:20.218Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:21:20.222Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:21:20.229Z [INFO]: Serving cached stock data.
+2024-12-03T05:21:20.233Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:21:20.237Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:20.247Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:21:20.250Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:21:20.253Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:20.261Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:21:20.264Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:21:20.266Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:21:20.268Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:21:20.277Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:21:20.327Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:21:20.330Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:21:20.335Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:21:20.370Z [INFO]: Serving cached stock data.
+2024-12-03T05:21:20.376Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:02.856Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T05:22:02.850Z"}
+2024-12-03T05:22:03.396Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:03.393Z"}
+2024-12-03T05:22:03.409Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:22:03.418Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:22:03.431Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:03.434Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:03.485Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:03.499Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:03.508Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:03.511Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:03.517Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:03.620Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:03.624Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:03.631Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:03.635Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:22:03.637Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:22:03.644Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:22:03.672Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:22:03.678Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:22:03.683Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:22:04.528Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T05:22:04.526Z"}
+2024-12-03T05:22:04.534Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:04.542Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:04.550Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:22:05.060Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:05.058Z"}
+2024-12-03T05:22:05.065Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:05.067Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:05.073Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:05.460Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:05.458Z"}
+2024-12-03T05:22:05.640Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:05.637Z"}
+2024-12-03T05:22:05.808Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:05.802Z"}
+2024-12-03T05:22:12.761Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:12.746Z"}
+2024-12-03T05:22:13.330Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T05:22:13.329Z"}
+2024-12-03T05:22:13.840Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:13.838Z"}
+2024-12-03T05:22:13.844Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:22:13.852Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:13.855Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:22:13.859Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:13.862Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:13.865Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:13.867Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:13.869Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:13.878Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:14.018Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:14.020Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:14.033Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:22:14.035Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:22:14.037Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:22:14.042Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:14.061Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:22:14.064Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:22:14.068Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:22:32.847Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-03T05:22:32.834Z"}
+2024-12-03T05:22:32.873Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T05:22:32.958Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T05:22:32.959Z [INFO]: Admin user fetching request received.
+2024-12-03T05:22:32.961Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T05:22:32.963Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T05:22:32.965Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T05:22:32.965Z [INFO]: Admin user fetching request received.
+2024-12-03T05:22:32.967Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T05:22:32.971Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T05:22:32.978Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T05:22:33.753Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:33.752Z"}
+2024-12-03T05:22:33.756Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:22:33.762Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:33.764Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:22:33.766Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:33.767Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:33.770Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:33.775Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:33.777Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:33.782Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:33.838Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:33.840Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:33.844Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:22:33.846Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:22:33.856Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:22:33.860Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:33.879Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:22:33.881Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:22:33.893Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:22:34.996Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T05:22:34.993Z"}
+2024-12-03T05:22:35.000Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:35.008Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:35.013Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:22:35.825Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:35.818Z"}
+2024-12-03T05:22:35.832Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:35.836Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:35.845Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:47.930Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T05:22:47.926Z"}
+2024-12-03T05:22:47.941Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:22:48.014Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:22:48.019Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:22:48.659Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:22:48.656Z"}
+2024-12-03T05:22:48.664Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:22:48.666Z [INFO]: Serving cached stock data.
+2024-12-03T05:22:48.675Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:22:50.659Z [INFO]: Action: Select Company, Details: {"success":true,"symbol":"AAPL"}
+2024-12-03T05:24:55.954Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T05:24:55.943Z"}
+2024-12-03T05:24:56.495Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:24:56.486Z"}
+2024-12-03T05:24:56.496Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:24:56.498Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:24:56.503Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:24:56.505Z [INFO]: Serving cached stock data.
+2024-12-03T05:24:56.507Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:24:56.508Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:24:56.510Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:24:56.521Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:24:56.525Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:24:56.536Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:24:56.539Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:24:56.544Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:24:56.560Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:24:56.594Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:24:56.603Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:24:56.605Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:24:56.643Z [INFO]: Serving cached stock data.
+2024-12-03T05:24:56.648Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:24:57.353Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:24:57.351Z"}
+2024-12-03T05:24:57.690Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:24:57.687Z"}
+2024-12-03T05:24:58.591Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T05:24:58.588Z"}
+2024-12-03T05:24:58.594Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:24:58.606Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:24:58.611Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:24:59.098Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:24:59.095Z"}
+2024-12-03T05:24:59.102Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:24:59.104Z [INFO]: Serving cached stock data.
+2024-12-03T05:24:59.109Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:24:59.627Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:24:59.625Z"}
+2024-12-03T05:24:59.836Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:24:59.832Z"}
+2024-12-03T05:25:00.535Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-03T05:25:00.533Z"}
+2024-12-03T05:25:00.541Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T05:25:00.545Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T05:25:00.545Z [INFO]: Admin user fetching request received.
+2024-12-03T05:25:00.547Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T05:25:00.553Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T05:25:00.555Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T05:25:00.555Z [INFO]: Admin user fetching request received.
+2024-12-03T05:25:00.556Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T05:25:00.558Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T05:25:00.572Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T05:25:01.080Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:25:01.076Z"}
+2024-12-03T05:25:01.083Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:25:01.085Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:25:01.088Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:25:01.089Z [INFO]: Serving cached stock data.
+2024-12-03T05:25:01.096Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:25:01.104Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:25:01.109Z [INFO]: Fetching stocks for date: 2024-12-01
+2024-12-03T05:25:01.111Z [INFO]: Serving cached stock data.
+2024-12-03T05:25:01.113Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:25:01.119Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:25:01.121Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:25:01.122Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:25:01.125Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:25:01.139Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:25:01.165Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":1}
+2024-12-03T05:25:01.171Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:25:01.173Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:25:01.176Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:25:04.866Z [INFO]: Action: Refresh Button Clicked, Details: {"timestamp":"2024-12-03T05:25:04.857Z"}
+2024-12-03T05:25:04.869Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:25:04.873Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:25:04.878Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:25:04.880Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:25:04.882Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:25:58.363Z [INFO]: Winston logging initialized
+2024-12-03T05:25:58.366Z [INFO]: Server is running...
+2024-12-03T05:25:58.373Z [INFO]: Backend server is running on http://localhost:5000
+2024-12-03T05:26:20.306Z [INFO]: User login initiated.
+2024-12-03T05:26:20.523Z [INFO]: Login successful for user: admin@example.com
+2024-12-03T05:26:20.529Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T05:26:20.532Z [INFO]: User finances fetched successfully.
+2024-12-03T05:26:20.553Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T05:26:20.557Z [INFO]: User finances fetched successfully.
+2024-12-03T05:26:20.630Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:26:20.636Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T05:26:20.639Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:26:20.658Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:26:20.665Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:26:20.674Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:26:20.682Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:26:20.684Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:26:20.694Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:26:20.700Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:26:20.703Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:26:20.707Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:26:20.713Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:26:20.742Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:26:20.751Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:26:20.756Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:26:20.765Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T05:26:20.771Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T05:26:20.784Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T05:26:20.806Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T05:26:20.809Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":132072.3}
+2024-12-03T05:26:20.820Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[-6.6000000000008185,-0.5000000000001137,116.39999999999986,0,0,0,0]}
+2024-12-03T05:26:22.132Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T05:26:22.130Z"}
+2024-12-03T05:26:22.136Z [INFO]: Fetching stocks for date: 2024-12-03
+2024-12-03T05:26:22.138Z [INFO]: No cached data found. Updating cache...
+2024-12-03T05:26:22.139Z [INFO]: Updating stock cache...
+2024-12-03T05:26:22.140Z [INFO]: Fetching stock data for symbol: AAPL
+2024-12-03T05:26:22.567Z [INFO]: Fetched data for AAPL: Latest Price - 239.59, Previous Price - 237.33
+2024-12-03T05:26:22.568Z [INFO]: Updating cache for AAPL with data: {"latestPrice":"239.59","previousPrice":"237.33"}
+2024-12-03T05:26:22.578Z [INFO]: Cache updated for AAPL
+2024-12-03T05:26:22.578Z [INFO]: Fetching stock data for symbol: MSFT
+2024-12-03T05:26:22.704Z [INFO]: Fetched data for MSFT: Latest Price - 430.98, Previous Price - 423.46
+2024-12-03T05:26:22.705Z [INFO]: Updating cache for MSFT with data: {"latestPrice":"430.98","previousPrice":"423.46"}
+2024-12-03T05:26:22.713Z [INFO]: Cache updated for MSFT
+2024-12-03T05:26:22.714Z [INFO]: Fetching stock data for symbol: AMZN
+2024-12-03T05:26:22.818Z [INFO]: Fetched data for AMZN: Latest Price - 210.71, Previous Price - 207.89
+2024-12-03T05:26:22.818Z [INFO]: Updating cache for AMZN with data: {"latestPrice":"210.71","previousPrice":"207.89"}
+2024-12-03T05:26:22.826Z [INFO]: Cache updated for AMZN
+2024-12-03T05:26:22.826Z [INFO]: Fetching stock data for symbol: GOOGL
+2024-12-03T05:26:22.990Z [INFO]: Fetched data for GOOGL: Latest Price - 171.49, Previous Price - 168.95
+2024-12-03T05:26:22.990Z [INFO]: Updating cache for GOOGL with data: {"latestPrice":"171.49","previousPrice":"168.95"}
+2024-12-03T05:26:22.998Z [INFO]: Cache updated for GOOGL
+2024-12-03T05:26:22.998Z [INFO]: Fetching stock data for symbol: TSLA
+2024-12-03T05:26:23.105Z [INFO]: Fetched data for TSLA: Latest Price - 357.09, Previous Price - 345.16
+2024-12-03T05:26:23.106Z [INFO]: Updating cache for TSLA with data: {"latestPrice":"357.09","previousPrice":"345.16"}
+2024-12-03T05:26:23.114Z [INFO]: Cache updated for TSLA
+2024-12-03T05:26:23.114Z [INFO]: Fetching stock data for symbol: FB
+2024-12-03T05:26:23.301Z [WARN]: No time series data available for FB
+2024-12-03T05:26:23.302Z [WARN]: No data available for FB, skipping update.
+2024-12-03T05:26:23.302Z [INFO]: Fetching stock data for symbol: NVDA
+2024-12-03T05:26:23.431Z [INFO]: Fetched data for NVDA: Latest Price - 138.63, Previous Price - 138.25
+2024-12-03T05:26:23.432Z [INFO]: Updating cache for NVDA with data: {"latestPrice":"138.63","previousPrice":"138.25"}
+2024-12-03T05:26:23.433Z [INFO]: Cache updated for NVDA
+2024-12-03T05:26:23.434Z [INFO]: Fetching stock data for symbol: JPM
+2024-12-03T05:26:23.544Z [INFO]: Fetched data for JPM: Latest Price - 246.25, Previous Price - 249.72
+2024-12-03T05:26:23.545Z [INFO]: Updating cache for JPM with data: {"latestPrice":"246.25","previousPrice":"249.72"}
+2024-12-03T05:26:23.552Z [INFO]: Cache updated for JPM
+2024-12-03T05:26:23.553Z [INFO]: Fetching stock data for symbol: JNJ
+2024-12-03T05:26:23.671Z [INFO]: Fetched data for JNJ: Latest Price - 154.80, Previous Price - 155.01
+2024-12-03T05:26:23.672Z [INFO]: Updating cache for JNJ with data: {"latestPrice":"154.80","previousPrice":"155.01"}
+2024-12-03T05:26:23.680Z [INFO]: Cache updated for JNJ
+2024-12-03T05:26:23.680Z [INFO]: Fetching stock data for symbol: V
+2024-12-03T05:26:23.806Z [INFO]: Fetched data for V: Latest Price - 316.65, Previous Price - 315.08
+2024-12-03T05:26:23.807Z [INFO]: Updating cache for V with data: {"latestPrice":"316.65","previousPrice":"315.08"}
+2024-12-03T05:26:23.815Z [INFO]: Cache updated for V
+2024-12-03T05:26:23.816Z [INFO]: Fetching stock data for symbol: PG
+2024-12-03T05:26:23.931Z [INFO]: Fetched data for PG: Latest Price - 179.70, Previous Price - 179.26
+2024-12-03T05:26:23.932Z [INFO]: Updating cache for PG with data: {"latestPrice":"179.70","previousPrice":"179.26"}
+2024-12-03T05:26:23.933Z [INFO]: Cache updated for PG
+2024-12-03T05:26:23.933Z [INFO]: Fetching stock data for symbol: UNH
+2024-12-03T05:26:24.062Z [INFO]: Fetched data for UNH: Latest Price - 608.52, Previous Price - 610.20
+2024-12-03T05:26:24.062Z [INFO]: Updating cache for UNH with data: {"latestPrice":"608.52","previousPrice":"610.20"}
+2024-12-03T05:26:24.064Z [INFO]: Cache updated for UNH
+2024-12-03T05:26:24.064Z [INFO]: Fetching stock data for symbol: DIS
+2024-12-03T05:26:24.176Z [INFO]: Fetched data for DIS: Latest Price - 117.16, Previous Price - 117.47
+2024-12-03T05:26:24.177Z [INFO]: Updating cache for DIS with data: {"latestPrice":"117.16","previousPrice":"117.47"}
+2024-12-03T05:26:24.184Z [INFO]: Cache updated for DIS
+2024-12-03T05:26:24.185Z [INFO]: Fetching stock data for symbol: HD
+2024-12-03T05:26:24.298Z [INFO]: Fetched data for HD: Latest Price - 426.96, Previous Price - 429.13
+2024-12-03T05:26:24.298Z [INFO]: Updating cache for HD with data: {"latestPrice":"426.96","previousPrice":"429.13"}
+2024-12-03T05:26:24.306Z [INFO]: Cache updated for HD
+2024-12-03T05:26:24.306Z [INFO]: Fetching stock data for symbol: MA
+2024-12-03T05:26:24.435Z [INFO]: Fetched data for MA: Latest Price - 531.36, Previous Price - 532.94
+2024-12-03T05:26:24.435Z [INFO]: Updating cache for MA with data: {"latestPrice":"531.36","previousPrice":"532.94"}
+2024-12-03T05:26:24.444Z [INFO]: Cache updated for MA
+2024-12-03T05:26:24.444Z [INFO]: Fetching stock data for symbol: PYPL
+2024-12-03T05:26:24.568Z [INFO]: Fetched data for PYPL: Latest Price - 86.53, Previous Price - 86.77
+2024-12-03T05:26:24.568Z [INFO]: Updating cache for PYPL with data: {"latestPrice":"86.53","previousPrice":"86.77"}
+2024-12-03T05:26:24.570Z [INFO]: Cache updated for PYPL
+2024-12-03T05:26:24.570Z [INFO]: Fetching stock data for symbol: VZ
+2024-12-03T05:26:24.679Z [INFO]: Fetched data for VZ: Latest Price - 43.85, Previous Price - 44.34
+2024-12-03T05:26:24.679Z [INFO]: Updating cache for VZ with data: {"latestPrice":"43.85","previousPrice":"44.34"}
+2024-12-03T05:26:24.690Z [INFO]: Cache updated for VZ
+2024-12-03T05:26:24.691Z [INFO]: Fetching stock data for symbol: NFLX
+2024-12-03T05:26:24.829Z [INFO]: Fetched data for NFLX: Latest Price - 897.74, Previous Price - 886.81
+2024-12-03T05:26:24.829Z [INFO]: Updating cache for NFLX with data: {"latestPrice":"897.74","previousPrice":"886.81"}
+2024-12-03T05:26:24.831Z [INFO]: Cache updated for NFLX
+2024-12-03T05:26:24.831Z [INFO]: Fetching stock data for symbol: INTC
+2024-12-03T05:26:24.944Z [INFO]: Fetched data for INTC: Latest Price - 23.93, Previous Price - 24.05
+2024-12-03T05:26:24.945Z [INFO]: Updating cache for INTC with data: {"latestPrice":"23.93","previousPrice":"24.05"}
+2024-12-03T05:26:24.946Z [INFO]: Cache updated for INTC
+2024-12-03T05:26:24.947Z [INFO]: Fetching stock data for symbol: ADBE
+2024-12-03T05:26:25.058Z [INFO]: Fetched data for ADBE: Latest Price - 516.20, Previous Price - 515.93
+2024-12-03T05:26:25.058Z [INFO]: Updating cache for ADBE with data: {"latestPrice":"516.20","previousPrice":"515.93"}
+2024-12-03T05:26:25.059Z [INFO]: Cache updated for ADBE
+2024-12-03T05:26:25.060Z [INFO]: Fetching stock data for symbol: PFE
+2024-12-03T05:26:25.171Z [INFO]: Fetched data for PFE: Latest Price - 25.82, Previous Price - 26.21
+2024-12-03T05:26:25.171Z [INFO]: Updating cache for PFE with data: {"latestPrice":"25.82","previousPrice":"26.21"}
+2024-12-03T05:26:25.179Z [INFO]: Cache updated for PFE
+2024-12-03T05:26:25.179Z [INFO]: Fetching stock data for symbol: KO
+2024-12-03T05:26:25.290Z [INFO]: Fetched data for KO: Latest Price - 63.65, Previous Price - 64.08
+2024-12-03T05:26:25.290Z [INFO]: Updating cache for KO with data: {"latestPrice":"63.65","previousPrice":"64.08"}
+2024-12-03T05:26:25.298Z [INFO]: Cache updated for KO
+2024-12-03T05:26:25.299Z [INFO]: Fetching stock data for symbol: PEP
+2024-12-03T05:26:25.422Z [INFO]: Fetched data for PEP: Latest Price - 163.05, Previous Price - 163.45
+2024-12-03T05:26:25.422Z [INFO]: Updating cache for PEP with data: {"latestPrice":"163.05","previousPrice":"163.45"}
+2024-12-03T05:26:25.430Z [INFO]: Cache updated for PEP
+2024-12-03T05:26:25.431Z [INFO]: Fetching stock data for symbol: CSCO
+2024-12-03T05:26:25.540Z [INFO]: Fetched data for CSCO: Latest Price - 59.43, Previous Price - 59.21
+2024-12-03T05:26:25.541Z [INFO]: Updating cache for CSCO with data: {"latestPrice":"59.43","previousPrice":"59.21"}
+2024-12-03T05:26:25.548Z [INFO]: Cache updated for CSCO
+2024-12-03T05:26:25.549Z [INFO]: Fetching stock data for symbol: ORCL
+2024-12-03T05:26:25.704Z [INFO]: Fetched data for ORCL: Latest Price - 181.41, Previous Price - 184.84
+2024-12-03T05:26:25.704Z [INFO]: Updating cache for ORCL with data: {"latestPrice":"181.41","previousPrice":"184.84"}
+2024-12-03T05:26:25.712Z [INFO]: Cache updated for ORCL
+2024-12-03T05:26:25.713Z [INFO]: Fetching stock data for symbol: MRK
+2024-12-03T05:26:25.808Z [WARN]: No time series data available for MRK
+2024-12-03T05:26:25.809Z [WARN]: No data available for MRK, skipping update.
+2024-12-03T05:26:25.809Z [INFO]: Fetching stock data for symbol: XOM
+2024-12-03T05:26:25.886Z [WARN]: No time series data available for XOM
+2024-12-03T05:26:25.887Z [WARN]: No data available for XOM, skipping update.
+2024-12-03T05:26:25.887Z [INFO]: Fetching stock data for symbol: BA
+2024-12-03T05:26:25.973Z [WARN]: No time series data available for BA
+2024-12-03T05:26:25.973Z [WARN]: No data available for BA, skipping update.
+2024-12-03T05:26:25.973Z [INFO]: Fetching stock data for symbol: COST
+2024-12-03T05:26:26.059Z [WARN]: No time series data available for COST
+2024-12-03T05:26:26.060Z [WARN]: No data available for COST, skipping update.
+2024-12-03T05:26:26.060Z [INFO]: Fetching stock data for symbol: WMT
+2024-12-03T05:26:26.150Z [WARN]: No time series data available for WMT
+2024-12-03T05:26:26.150Z [WARN]: No data available for WMT, skipping update.
+2024-12-03T05:26:26.152Z [INFO]: Serving updated stock data.
+2024-12-03T05:26:26.199Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
+2024-12-03T17:13:05.847Z [INFO]: Winston logging initialized
+2024-12-03T17:13:05.860Z [INFO]: Server is running...
+2024-12-03T17:13:05.876Z [INFO]: Backend server is running on http://localhost:5000
+2024-12-03T17:15:43.828Z [INFO]: User login initiated.
+2024-12-03T17:15:44.068Z [INFO]: Login successful for user: admin@example.com
+2024-12-03T17:15:44.084Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T17:15:44.089Z [INFO]: User finances fetched successfully.
+2024-12-03T17:15:44.112Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T17:15:44.142Z [INFO]: User finances fetched successfully.
+2024-12-03T17:15:44.173Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T17:15:44.183Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T17:15:44.190Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:44.208Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:44.213Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:44.220Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:44.224Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:44.232Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:44.236Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:44.239Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T17:15:44.245Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:44.250Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:44.256Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:44.259Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T17:15:44.266Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:44.271Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T17:15:44.275Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T17:15:44.279Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T17:15:44.284Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:44.417Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T17:15:44.419Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T17:15:44.423Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T17:15:46.653Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T17:15:46.651Z"}
+2024-12-03T17:15:46.661Z [INFO]: Fetching stocks for date: 2024-12-03
+2024-12-03T17:15:46.669Z [INFO]: Serving cached stock data.
+2024-12-03T17:15:46.676Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
+2024-12-03T17:15:50.384Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T17:15:50.379Z"}
+2024-12-03T17:15:50.389Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:15:50.395Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:15:50.421Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T17:16:05.489Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T17:16:05.484Z"}
+2024-12-03T17:16:06.460Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T17:16:06.459Z"}
+2024-12-03T17:16:06.466Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T17:16:06.471Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T17:16:06.476Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:16:06.486Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:16:06.490Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:16:06.495Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T17:16:06.500Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:16:06.504Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:16:06.506Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T17:16:06.514Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:16:06.519Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T17:16:06.521Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T17:16:06.525Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T17:16:06.528Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T17:16:06.535Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T17:16:06.561Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T17:16:06.564Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T17:16:06.567Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T17:16:57.384Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T17:16:57.379Z"}
+2024-12-03T17:17:24.017Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T17:17:24.002Z"}
+2024-12-03T17:17:24.026Z [INFO]: Fetching stocks for date: 2024-12-03
+2024-12-03T17:17:24.250Z [INFO]: Serving cached stock data.
+2024-12-03T17:17:24.254Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
+2024-12-03T17:17:47.835Z [INFO]: Action: Buy Stock Error, Details: {"success":false,"reason":"Invalid quantity"}
+2024-12-03T17:18:15.185Z [INFO]: Action: Sell Stock Error, Details: {"success":false,"reason":"Invalid quantity"}
+2024-12-03T17:18:16.082Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T17:18:16.078Z"}
+2024-12-03T17:20:06.726Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-03T17:20:06.713Z"}
+2024-12-03T17:20:06.753Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T17:20:06.822Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T17:20:06.823Z [INFO]: Admin user fetching request received.
+2024-12-03T17:20:06.824Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T17:20:06.826Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T17:20:06.828Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T17:20:06.829Z [INFO]: Admin user fetching request received.
+2024-12-03T17:20:06.831Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T17:20:06.833Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T17:20:06.842Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T17:22:37.868Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-03T17:22:37.851Z"}
+2024-12-03T17:22:37.903Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T17:22:37.973Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T17:22:37.974Z [INFO]: Admin user fetching request received.
+2024-12-03T17:22:37.975Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T17:22:37.977Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T17:22:37.978Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T17:22:37.979Z [INFO]: Admin user fetching request received.
+2024-12-03T17:22:37.980Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T17:22:37.982Z [INFO]: Fetched 7 user(s) successfully.
+2024-12-03T17:22:37.988Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":7}
+2024-12-03T17:23:40.506Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T17:23:40.578Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T17:23:40.578Z [INFO]: Admin deleting user ID: 12
+2024-12-03T17:23:40.598Z [INFO]: User ID 12 deleted successfully.
+2024-12-03T17:28:10.937Z [INFO]: Action: Delete User, Details: {"success":true,"userId":12}
+2024-12-03T23:23:37.347Z [INFO]: Winston logging initialized
+2024-12-03T23:23:37.350Z [INFO]: Server is running...
+2024-12-03T23:23:37.362Z [INFO]: Backend server is running on http://localhost:5000
+2024-12-03T23:33:25.735Z [INFO]: User login initiated.
+2024-12-03T23:33:26.241Z [INFO]: Login successful for user: admin@example.com
+2024-12-03T23:33:26.259Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T23:33:26.263Z [INFO]: User finances fetched successfully.
+2024-12-03T23:33:26.326Z [INFO]: Fetching finances for user ID: 1
+2024-12-03T23:33:26.332Z [INFO]: User finances fetched successfully.
+2024-12-03T23:33:26.351Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T23:33:26.358Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T23:33:26.368Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:26.395Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:26.400Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:26.412Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:26.421Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T23:33:26.427Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:26.439Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:26.444Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:26.454Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T23:33:26.463Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T23:33:26.468Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T23:33:26.475Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:26.478Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:26.485Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:26.489Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:26.497Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:26.907Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T23:33:26.910Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T23:33:26.913Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T23:33:26.917Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T23:33:30.949Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-03T23:33:30.938Z"}
+2024-12-03T23:33:30.977Z [INFO]: Fetching stocks for date: 2024-12-03
+2024-12-03T23:33:30.988Z [INFO]: Serving cached stock data.
+2024-12-03T23:33:31.001Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
+2024-12-03T23:33:34.789Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-03T23:33:34.772Z"}
+2024-12-03T23:33:36.969Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-03T23:33:36.966Z"}
+2024-12-03T23:33:36.976Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T23:33:36.977Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T23:33:36.978Z [INFO]: Admin user fetching request received.
+2024-12-03T23:33:36.981Z [INFO]: Fetched 6 user(s) successfully.
+2024-12-03T23:33:36.987Z [INFO]: Admin verification initiated for ID: 1
+2024-12-03T23:33:36.989Z [INFO]: Admin verification successful for ID: 1
+2024-12-03T23:33:36.990Z [INFO]: Admin user fetching request received.
+2024-12-03T23:33:36.991Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":6}
+2024-12-03T23:33:36.993Z [INFO]: Fetched 6 user(s) successfully.
+2024-12-03T23:33:36.999Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":6}
+2024-12-03T23:33:40.059Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-03T23:33:40.055Z"}
+2024-12-03T23:33:40.067Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T23:33:40.072Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-03T23:33:40.076Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:40.086Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:40.090Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:40.093Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T23:33:40.102Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:40.109Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:40.111Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-03T23:33:40.119Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:40.124Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-03T23:33:40.126Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T23:33:40.129Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T23:33:40.134Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-03T23:33:40.139Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-03T23:33:40.180Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-03T23:33:40.187Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-03T23:33:40.189Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-04T00:13:49.394Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-04T00:13:49.388Z"}
+2024-12-04T00:16:47.662Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-04T00:16:47.657Z"}
+2024-12-04T00:16:47.672Z [INFO]: Admin verification initiated for ID: 1
+2024-12-04T00:16:48.049Z [INFO]: Admin verification successful for ID: 1
+2024-12-04T00:16:48.049Z [INFO]: Admin user fetching request received.
+2024-12-04T00:16:48.051Z [INFO]: Fetched 6 user(s) successfully.
+2024-12-04T00:16:48.053Z [INFO]: Admin verification initiated for ID: 1
+2024-12-04T00:16:48.055Z [INFO]: Admin verification successful for ID: 1
+2024-12-04T00:16:48.056Z [INFO]: Admin user fetching request received.
+2024-12-04T00:16:48.057Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":6}
+2024-12-04T00:16:48.059Z [INFO]: Fetched 6 user(s) successfully.
+2024-12-04T00:16:48.068Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":6}
+2024-12-04T00:26:27.430Z [INFO]: Action: User Logout, Details: {"timestamp":"2024-12-04T00:26:27.417Z"}
+2024-12-04T00:26:54.962Z [INFO]: User login initiated.
+2024-12-04T00:26:55.231Z [INFO]: Login successful for user: admin@example.com
+2024-12-04T00:26:55.243Z [INFO]: Fetching finances for user ID: 1
+2024-12-04T00:26:55.251Z [INFO]: User finances fetched successfully.
+2024-12-04T00:26:55.255Z [INFO]: Fetching finances for user ID: 1
+2024-12-04T00:26:55.256Z [INFO]: User finances fetched successfully.
+2024-12-04T00:26:55.322Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-04T00:26:55.328Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-04T00:26:55.338Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-04T00:26:55.351Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-04T00:26:55.356Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-04T00:26:55.363Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-04T00:26:55.370Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-04T00:26:55.374Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-04T00:26:55.379Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-04T00:26:55.385Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-04T00:26:55.399Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-04T00:26:55.404Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-04T00:26:55.410Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-04T00:26:55.420Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-04T00:26:55.426Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-04T00:26:55.430Z [INFO]: Fetching portfolio for user ID: 1
+2024-12-04T00:26:55.451Z [INFO]: Portfolio fetched successfully for user ID: 1
+2024-12-04T00:26:55.476Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":7}
+2024-12-04T00:26:55.492Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"totalValues":134472.9}
+2024-12-04T00:26:55.509Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AMZN","PG","NVDA","AAPL","TSLA","GOOGL","MSFT"],"profits":[162.60000000000048,3.8999999999998636,131.59999999999968,225.9999999999991,954.399999999996,279.40000000000225,752.0000000000039]}
+2024-12-04T00:26:55.520Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-04T00:26:55.529Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":7}
+2024-12-04T00:27:30.325Z [INFO]: Action: View Change, Details: {"view":"admin-panel","timestamp":"2024-12-04T00:27:30.312Z"}
+2024-12-04T00:27:30.353Z [INFO]: Admin verification initiated for ID: 1
+2024-12-04T00:27:30.453Z [INFO]: Admin verification successful for ID: 1
+2024-12-04T00:27:30.453Z [INFO]: Admin user fetching request received.
+2024-12-04T00:27:30.454Z [INFO]: Fetched 6 user(s) successfully.
+2024-12-04T00:27:30.457Z [INFO]: Admin verification initiated for ID: 1
+2024-12-04T00:27:30.458Z [INFO]: Admin verification successful for ID: 1
+2024-12-04T00:27:30.458Z [INFO]: Admin user fetching request received.
+2024-12-04T00:27:30.460Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":6}
+2024-12-04T00:27:30.462Z [INFO]: Fetched 6 user(s) successfully.
+2024-12-04T00:27:30.472Z [INFO]: Action: Fetch Users, Details: {"success":true,"usersCount":6}
+2024-12-04T00:28:42.639Z [INFO]: Admin verification initiated for ID: 1
+2024-12-04T00:28:42.737Z [INFO]: Admin verification successful for ID: 1
+2024-12-04T00:28:42.738Z [INFO]: Admin adding a new user.
+2024-12-04T00:28:42.963Z [INFO]: New user added successfully by admin: user9@example.com
+2024-12-04T00:28:45.049Z [INFO]: Action: Add User, Details: {"success":true,"username":"user9@example.com"}
+2024-12-04T00:28:57.470Z [INFO]: Action: User Logout, Details: {"timestamp":"2024-12-04T00:28:57.450Z"}
+2024-12-04T00:29:11.571Z [INFO]: User login initiated.
+2024-12-04T00:29:11.815Z [INFO]: Login successful for user: user1@example.com
+2024-12-04T00:29:11.821Z [INFO]: Fetching finances for user ID: 8
+2024-12-04T00:29:11.825Z [INFO]: User finances fetched successfully.
+2024-12-04T00:29:11.850Z [INFO]: Fetching finances for user ID: 8
+2024-12-04T00:29:11.852Z [INFO]: User finances fetched successfully.
+2024-12-04T00:29:11.910Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-04T00:29:11.921Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-04T00:29:11.945Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:29:11.955Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:29:11.960Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:29:11.966Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:29:11.970Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:29:11.974Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:29:11.982Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:29:11.985Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":3}
+2024-12-04T00:29:11.989Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:29:11.994Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:29:11.996Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":3}
+2024-12-04T00:29:12.001Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AAPL","JNJ","VZ"],"totalValues":95824.5}
+2024-12-04T00:29:12.004Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AAPL","JNJ","VZ"],"profits":[232.99999999999983,-239.99999999999773,-265.00000000000057]}
+2024-12-04T00:29:12.007Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:29:12.015Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:29:12.018Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:29:12.060Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":3}
+2024-12-04T00:29:12.065Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":3}
+2024-12-04T00:29:12.068Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["AAPL","JNJ","VZ"],"totalValues":95824.5}
+2024-12-04T00:29:12.071Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["AAPL","JNJ","VZ"],"profits":[232.99999999999983,-239.99999999999773,-265.00000000000057]}
+2024-12-04T00:30:12.089Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-04T00:30:12.076Z"}
+2024-12-04T00:30:12.098Z [INFO]: Fetching stocks for date: 2024-12-04
+2024-12-04T00:30:12.213Z [INFO]: No cached data found. Updating cache...
+2024-12-04T00:30:12.214Z [INFO]: Updating stock cache...
+2024-12-04T00:30:12.215Z [INFO]: Fetching stock data for symbol: AAPL
+2024-12-04T00:30:12.701Z [INFO]: Fetched data for AAPL: Latest Price - 242.65, Previous Price - 239.59
+2024-12-04T00:30:12.703Z [INFO]: Updating cache for AAPL with data: {"latestPrice":"242.65","previousPrice":"239.59"}
+2024-12-04T00:30:12.718Z [INFO]: Cache updated for AAPL
+2024-12-04T00:30:12.720Z [INFO]: Fetching stock data for symbol: MSFT
+2024-12-04T00:30:12.897Z [INFO]: Fetched data for MSFT: Latest Price - 431.20, Previous Price - 430.98
+2024-12-04T00:30:12.898Z [INFO]: Updating cache for MSFT with data: {"latestPrice":"431.20","previousPrice":"430.98"}
+2024-12-04T00:30:12.908Z [INFO]: Cache updated for MSFT
+2024-12-04T00:30:12.908Z [INFO]: Fetching stock data for symbol: AMZN
+2024-12-04T00:30:13.097Z [INFO]: Fetched data for AMZN: Latest Price - 213.44, Previous Price - 210.71
+2024-12-04T00:30:13.098Z [INFO]: Updating cache for AMZN with data: {"latestPrice":"213.44","previousPrice":"210.71"}
+2024-12-04T00:30:13.111Z [INFO]: Cache updated for AMZN
+2024-12-04T00:30:13.112Z [INFO]: Fetching stock data for symbol: GOOGL
+2024-12-04T00:30:13.248Z [INFO]: Fetched data for GOOGL: Latest Price - 171.34, Previous Price - 171.49
+2024-12-04T00:30:13.249Z [INFO]: Updating cache for GOOGL with data: {"latestPrice":"171.34","previousPrice":"171.49"}
+2024-12-04T00:30:13.260Z [INFO]: Cache updated for GOOGL
+2024-12-04T00:30:13.261Z [INFO]: Fetching stock data for symbol: TSLA
+2024-12-04T00:30:13.446Z [INFO]: Fetched data for TSLA: Latest Price - 351.42, Previous Price - 357.09
+2024-12-04T00:30:13.448Z [INFO]: Updating cache for TSLA with data: {"latestPrice":"351.42","previousPrice":"357.09"}
+2024-12-04T00:30:13.458Z [INFO]: Cache updated for TSLA
+2024-12-04T00:30:13.460Z [INFO]: Fetching stock data for symbol: FB
+2024-12-04T00:30:15.289Z [WARN]: No time series data available for FB
+2024-12-04T00:30:15.290Z [WARN]: No data available for FB, skipping update.
+2024-12-04T00:30:15.291Z [INFO]: Fetching stock data for symbol: NVDA
+2024-12-04T00:30:15.669Z [INFO]: Fetched data for NVDA: Latest Price - 140.26, Previous Price - 138.63
+2024-12-04T00:30:15.670Z [INFO]: Updating cache for NVDA with data: {"latestPrice":"140.26","previousPrice":"138.63"}
+2024-12-04T00:30:15.680Z [INFO]: Cache updated for NVDA
+2024-12-04T00:30:15.685Z [INFO]: Fetching stock data for symbol: JPM
+2024-12-04T00:30:15.921Z [INFO]: Fetched data for JPM: Latest Price - 244.82, Previous Price - 246.25
+2024-12-04T00:30:15.922Z [INFO]: Updating cache for JPM with data: {"latestPrice":"244.82","previousPrice":"246.25"}
+2024-12-04T00:30:15.931Z [INFO]: Cache updated for JPM
+2024-12-04T00:30:15.932Z [INFO]: Fetching stock data for symbol: JNJ
+2024-12-04T00:30:16.094Z [INFO]: Fetched data for JNJ: Latest Price - 152.36, Previous Price - 154.80
+2024-12-04T00:30:16.095Z [INFO]: Updating cache for JNJ with data: {"latestPrice":"152.36","previousPrice":"154.80"}
+2024-12-04T00:30:16.103Z [INFO]: Cache updated for JNJ
+2024-12-04T00:30:16.103Z [INFO]: Fetching stock data for symbol: V
+2024-12-04T00:30:16.483Z [INFO]: Fetched data for V: Latest Price - 313.01, Previous Price - 316.65
+2024-12-04T00:30:16.483Z [INFO]: Updating cache for V with data: {"latestPrice":"313.01","previousPrice":"316.65"}
+2024-12-04T00:30:16.485Z [INFO]: Cache updated for V
+2024-12-04T00:30:16.486Z [INFO]: Fetching stock data for symbol: PG
+2024-12-04T00:30:16.626Z [INFO]: Fetched data for PG: Latest Price - 175.42, Previous Price - 179.70
+2024-12-04T00:30:16.628Z [INFO]: Updating cache for PG with data: {"latestPrice":"175.42","previousPrice":"179.70"}
+2024-12-04T00:30:16.638Z [INFO]: Cache updated for PG
+2024-12-04T00:30:16.639Z [INFO]: Fetching stock data for symbol: UNH
+2024-12-04T00:30:16.788Z [INFO]: Fetched data for UNH: Latest Price - 605.23, Previous Price - 608.52
+2024-12-04T00:30:16.790Z [INFO]: Updating cache for UNH with data: {"latestPrice":"605.23","previousPrice":"608.52"}
+2024-12-04T00:30:16.798Z [INFO]: Cache updated for UNH
+2024-12-04T00:30:16.802Z [INFO]: Fetching stock data for symbol: DIS
+2024-12-04T00:30:16.912Z [INFO]: Fetched data for DIS: Latest Price - 116.45, Previous Price - 117.16
+2024-12-04T00:30:16.914Z [INFO]: Updating cache for DIS with data: {"latestPrice":"116.45","previousPrice":"117.16"}
+2024-12-04T00:30:16.924Z [INFO]: Cache updated for DIS
+2024-12-04T00:30:16.925Z [INFO]: Fetching stock data for symbol: HD
+2024-12-04T00:30:17.137Z [INFO]: Fetched data for HD: Latest Price - 429.35, Previous Price - 426.96
+2024-12-04T00:30:17.139Z [INFO]: Updating cache for HD with data: {"latestPrice":"429.35","previousPrice":"426.96"}
+2024-12-04T00:30:17.149Z [INFO]: Cache updated for HD
+2024-12-04T00:30:17.151Z [INFO]: Fetching stock data for symbol: MA
+2024-12-04T00:30:17.297Z [INFO]: Fetched data for MA: Latest Price - 526.18, Previous Price - 531.36
+2024-12-04T00:30:17.298Z [INFO]: Updating cache for MA with data: {"latestPrice":"526.18","previousPrice":"531.36"}
+2024-12-04T00:30:17.308Z [INFO]: Cache updated for MA
+2024-12-04T00:30:17.309Z [INFO]: Fetching stock data for symbol: PYPL
+2024-12-04T00:30:17.453Z [INFO]: Fetched data for PYPL: Latest Price - 85.14, Previous Price - 86.53
+2024-12-04T00:30:17.454Z [INFO]: Updating cache for PYPL with data: {"latestPrice":"85.14","previousPrice":"86.53"}
+2024-12-04T00:30:17.464Z [INFO]: Cache updated for PYPL
+2024-12-04T00:30:17.466Z [INFO]: Fetching stock data for symbol: VZ
+2024-12-04T00:30:17.601Z [INFO]: Fetched data for VZ: Latest Price - 43.83, Previous Price - 43.85
+2024-12-04T00:30:17.602Z [INFO]: Updating cache for VZ with data: {"latestPrice":"43.83","previousPrice":"43.85"}
+2024-12-04T00:30:17.613Z [INFO]: Cache updated for VZ
+2024-12-04T00:30:17.615Z [INFO]: Fetching stock data for symbol: NFLX
+2024-12-04T00:30:17.821Z [INFO]: Fetched data for NFLX: Latest Price - 902.17, Previous Price - 897.74
+2024-12-04T00:30:17.823Z [INFO]: Updating cache for NFLX with data: {"latestPrice":"902.17","previousPrice":"897.74"}
+2024-12-04T00:30:17.835Z [INFO]: Cache updated for NFLX
+2024-12-04T00:30:17.837Z [INFO]: Fetching stock data for symbol: INTC
+2024-12-04T00:30:17.962Z [INFO]: Fetched data for INTC: Latest Price - 22.47, Previous Price - 23.93
+2024-12-04T00:30:17.964Z [INFO]: Updating cache for INTC with data: {"latestPrice":"22.47","previousPrice":"23.93"}
+2024-12-04T00:30:17.974Z [INFO]: Cache updated for INTC
+2024-12-04T00:30:17.975Z [INFO]: Fetching stock data for symbol: ADBE
+2024-12-04T00:30:18.143Z [INFO]: Fetched data for ADBE: Latest Price - 516.26, Previous Price - 516.20
+2024-12-04T00:30:18.144Z [INFO]: Updating cache for ADBE with data: {"latestPrice":"516.26","previousPrice":"516.20"}
+2024-12-04T00:30:18.155Z [INFO]: Cache updated for ADBE
+2024-12-04T00:30:18.156Z [INFO]: Fetching stock data for symbol: PFE
+2024-12-04T00:30:18.258Z [INFO]: Fetched data for PFE: Latest Price - 25.56, Previous Price - 25.82
+2024-12-04T00:30:18.259Z [INFO]: Updating cache for PFE with data: {"latestPrice":"25.56","previousPrice":"25.82"}
+2024-12-04T00:30:18.266Z [INFO]: Cache updated for PFE
+2024-12-04T00:30:18.270Z [INFO]: Fetching stock data for symbol: KO
+2024-12-04T00:30:18.494Z [INFO]: Fetched data for KO: Latest Price - 63.52, Previous Price - 63.65
+2024-12-04T00:30:18.496Z [INFO]: Updating cache for KO with data: {"latestPrice":"63.52","previousPrice":"63.65"}
+2024-12-04T00:30:18.506Z [INFO]: Cache updated for KO
+2024-12-04T00:30:18.508Z [INFO]: Fetching stock data for symbol: PEP
+2024-12-04T00:30:18.648Z [INFO]: Fetched data for PEP: Latest Price - 161.70, Previous Price - 163.05
+2024-12-04T00:30:18.649Z [INFO]: Updating cache for PEP with data: {"latestPrice":"161.70","previousPrice":"163.05"}
+2024-12-04T00:30:18.659Z [INFO]: Cache updated for PEP
+2024-12-04T00:30:18.660Z [INFO]: Fetching stock data for symbol: CSCO
+2024-12-04T00:30:18.818Z [INFO]: Fetched data for CSCO: Latest Price - 59.48, Previous Price - 59.43
+2024-12-04T00:30:18.819Z [INFO]: Updating cache for CSCO with data: {"latestPrice":"59.48","previousPrice":"59.43"}
+2024-12-04T00:30:18.829Z [INFO]: Cache updated for CSCO
+2024-12-04T00:30:18.830Z [INFO]: Fetching stock data for symbol: ORCL
+2024-12-04T00:30:19.017Z [INFO]: Fetched data for ORCL: Latest Price - 182.89, Previous Price - 181.41
+2024-12-04T00:30:19.018Z [INFO]: Updating cache for ORCL with data: {"latestPrice":"182.89","previousPrice":"181.41"}
+2024-12-04T00:30:19.022Z [INFO]: Cache updated for ORCL
+2024-12-04T00:30:19.023Z [INFO]: Fetching stock data for symbol: MRK
+2024-12-04T00:30:19.122Z [WARN]: No time series data available for MRK
+2024-12-04T00:30:19.123Z [WARN]: No data available for MRK, skipping update.
+2024-12-04T00:30:19.124Z [INFO]: Fetching stock data for symbol: XOM
+2024-12-04T00:30:19.221Z [WARN]: No time series data available for XOM
+2024-12-04T00:30:19.222Z [WARN]: No data available for XOM, skipping update.
+2024-12-04T00:30:19.224Z [INFO]: Fetching stock data for symbol: BA
+2024-12-04T00:30:19.325Z [WARN]: No time series data available for BA
+2024-12-04T00:30:19.327Z [WARN]: No data available for BA, skipping update.
+2024-12-04T00:30:19.328Z [INFO]: Fetching stock data for symbol: COST
+2024-12-04T00:30:19.422Z [WARN]: No time series data available for COST
+2024-12-04T00:30:19.423Z [WARN]: No data available for COST, skipping update.
+2024-12-04T00:30:19.423Z [INFO]: Fetching stock data for symbol: WMT
+2024-12-04T00:30:19.512Z [WARN]: No time series data available for WMT
+2024-12-04T00:30:19.513Z [WARN]: No data available for WMT, skipping update.
+2024-12-04T00:30:19.517Z [INFO]: Serving updated stock data.
+2024-12-04T00:30:19.543Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
+2024-12-04T00:30:28.546Z [INFO]: Buy stock request initiated for user 8, symbol AAPL, quantity 10, price 242.65
+2024-12-04T00:30:28.564Z [INFO]: Portfolio updated for user 8, symbol AAPL, quantity 10, price 242.65
+2024-12-04T00:30:28.571Z [INFO]: User finances updated for 8. Total cost: 2426.5
+2024-12-04T00:30:28.586Z [INFO]: User transaction updated for 8.
+2024-12-04T00:30:29.915Z [INFO]: Action: Buy Stock, Details: {"success":true,"symbol":"AAPL","quantity":"10"}
+2024-12-04T00:30:29.919Z [INFO]: Fetching finances for user ID: 8
+2024-12-04T00:30:29.927Z [INFO]: User finances fetched successfully.
+2024-12-04T00:30:29.933Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:30:29.946Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:30:29.961Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":3}
+2024-12-04T00:30:36.098Z [INFO]: Buy stock request initiated for user 8, symbol MSFT, quantity 100, price 431.20
+2024-12-04T00:30:36.104Z [INFO]: Portfolio updated for user 8, symbol MSFT, quantity 100, price 431.20
+2024-12-04T00:30:36.109Z [INFO]: User finances updated for 8. Total cost: 43120
+2024-12-04T00:30:36.112Z [INFO]: User transaction updated for 8.
+2024-12-04T00:30:36.982Z [INFO]: Action: Buy Stock, Details: {"success":true,"symbol":"MSFT","quantity":"100"}
+2024-12-04T00:30:36.984Z [INFO]: Fetching finances for user ID: 8
+2024-12-04T00:30:36.990Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:30:36.997Z [INFO]: User finances fetched successfully.
+2024-12-04T00:30:37.127Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:30:37.133Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":4}
+2024-12-04T00:30:42.771Z [INFO]: Action: Refresh Button Clicked, Details: {"timestamp":"2024-12-04T00:30:42.750Z"}
+2024-12-04T00:30:42.775Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:30:42.789Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:30:42.806Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":4}
+2024-12-04T00:30:42.810Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["JNJ","VZ","AAPL","MSFT"],"totalValues":140538}
+2024-12-04T00:30:42.818Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["JNJ","VZ","AAPL","MSFT"],"profits":[-1215.9999999999968,-275.00000000000216,0,0]}
+2024-12-04T00:30:49.533Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-04T00:30:49.513Z"}
+2024-12-04T00:30:49.547Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:30:49.559Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:30:49.579Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":4}
+2024-12-04T00:30:56.414Z [INFO]: Action: View Change, Details: {"view":"transaction-history","timestamp":"2024-12-04T00:30:56.402Z"}
+2024-12-04T00:31:09.234Z [INFO]: Action: View Change, Details: {"view":"portfolio","timestamp":"2024-12-04T00:31:09.193Z"}
+2024-12-04T00:31:09.243Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-04T00:31:09.257Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Initiated"}
+2024-12-04T00:31:09.264Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:31:09.350Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:31:09.352Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:31:09.355Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":4}
+2024-12-04T00:31:09.359Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:31:09.362Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:31:09.366Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":4}
+2024-12-04T00:31:09.374Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["JNJ","VZ","AAPL","MSFT"],"totalValues":140538}
+2024-12-04T00:31:09.377Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["JNJ","VZ","AAPL","MSFT"],"profits":[-1215.9999999999968,-275.00000000000216,0,0]}
+2024-12-04T00:31:09.384Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:31:09.395Z [INFO]: Fetching portfolio for user ID: 8
+2024-12-04T00:31:09.399Z [INFO]: Portfolio fetched successfully for user ID: 8
+2024-12-04T00:31:09.411Z [INFO]: Action: Fetch Portfolio, Details: {"success":true,"dataLength":4}
+2024-12-04T00:31:09.414Z [INFO]: Action: Fetch User Holdings, Details: {"status":"Success","holdingsCount":4}
+2024-12-04T00:31:09.418Z [INFO]: Action: Prepare Chart Data, Details: {"status":"Success","labels":["JNJ","VZ","AAPL","MSFT"],"totalValues":140538}
+2024-12-04T00:31:09.426Z [INFO]: Action: Prepare Profit Data, Details: {"status":"Success","labels":["JNJ","VZ","AAPL","MSFT"],"profits":[-1215.9999999999968,-275.00000000000216,0,0]}
+2024-12-04T00:34:11.082Z [INFO]: Action: View Change, Details: {"view":"buy-sell","timestamp":"2024-12-04T00:34:11.067Z"}
+2024-12-04T00:34:11.093Z [INFO]: Fetching stocks for date: 2024-12-04
+2024-12-04T00:34:11.200Z [INFO]: Serving cached stock data.
+2024-12-04T00:34:11.204Z [INFO]: Action: Fetch Stock Prices, Details: {"success":true,"dataLength":24}
