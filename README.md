@@ -52,7 +52,7 @@ A full-stack web application for managing personal investment portfolios. Users 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/{your-username}/fox-of-hood.git
+   git clone https://github.com/tejas-manu/fox-of-hood
    ```
 
 2. Install dependencies:
